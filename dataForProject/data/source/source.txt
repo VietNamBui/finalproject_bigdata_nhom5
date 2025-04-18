@@ -1,0 +1,7 @@
+1. Tổng quan về dữ liệu lớn(BIGDATA), Trung Tâm Thông tin Khoa học thống kê(Viện KHTK), truy cập ngày 14/4/2025
+2. TÍCH HỢP BIG DATA VÀ ĐIỆN TOÁN ĐÁM MÂY: ĐỘNG LỰC THÚC ĐẨY THAY ĐỔI CHO DOANH NGHIỆP, Trường Đại học Kinh tế - Tài chính Thành Phố Hồ Chí Minh, truy cập ngày 14/4/2025
+3. Big data analytics. Issues in Information System, Zakir, J., Seymour, T., & Berg, K. (2015), truy cập ngày 14/4/2025
+4. INTRODUCTION TO BIG DATA, Dnyansagar Arts & Commerce College, truy cập ngày 15/4/2025
+5. BIG DATA VÀ XU HƯỚNG ỨNG DỤNG TRONG HOẠT ĐỘNG THÔNG TIN - THƯ VIỆN, ThS Nguyễn Lê Phương Hoài Viện Thông tin Khoa học xã hội, truy cập ngày 15/4/2025
+6. Adding Value to Manufacturing, Retail, Supply Chain, and Logistics Operations with Big Data Analytics
+7. What is Big Data?, Oracle Corporation, truy cập ngày 15/4

@@ -1,0 +1,702 @@
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/381804857
+Tích Hợp Big Data Và Điện Toán Đám Mây: Động Lực Thúc Đẩy Thay Đổi Cho
+Doanh Nghiệp.
+Conference Paper · June 2024
+CITATIONS
+0
+READS
+376
+1 author:
+Vo Thi Kim Anh
+Ton Duc Thang University
+28 PUBLICATIONS   2 CITATIONS   
+SEE PROFILE
+All content following this page was uploaded by Vo Thi Kim Anh on 29 June 2024.
+The user has requested enhancement of the downloaded file.
+
+KỶ YẾU
+HỘI THẢO KHOA HỌC
+KHOA CÔNG NGHỆ THÔNG TIN
+LẦN 6
+2024
+
+KỶ YẾU HỘI THẢO KHOA HỌC CÔNG NGHỆ LẦN THỨ 6 
+ 
+i 
+ 
+ 
+TRƯỜNG ĐẠI HỌC KINH TẾ - TÀI CHÍNH THÀNH PHỐ HỒ CHÍ MINH 
+KHOA CÔNG NGHỆ THÔNG TIN 
+-------------- 
+ 
+ 
+ 
+ 
+KỶ YẾU HỘI THẢO 
+KHOA HỌC CÔNG NGHỆ LẦN 6 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Thành Phố Hồ Chí Minh, tháng 06 năm 2024 
+(Lưu hành nội bộ) 
+
+KỶ YẾU HỘI THẢO KHOA HỌC CÔNG NGHỆ LẦN THỨ 6 
+ 
+ii 
+ 
+BAN BIÊN TẬP 
+1. TS. Nguyễn Hà Giang - Trưởng Khoa CNTT 
+2. TS. Văn Thị Thiên Trang - Phó Trưởng Khoa CNTT 
+3. ThS. Nguyễn Minh Tuấn - Phó Trưởng Khoa CNTT 
+4. ThS. Trần Thành Công - Trợ lý Trưởng Khoa, Trưởng Ngành TMĐT 
+5. ThS. Hoàng Văn Hiếu - Trưởng Ngành CNTT 
+6. ThS. Võ Đình Ngà - Trưởng Ngành TKĐH 
+7. ThS. Nguyễn Thị Hoài Linh - Trưởng Ngành KHDL 
+8. ThS. Ngô Văn Công Bằng - Trưởng Bộ môn THUD 
+9. ThS. Trương Nhã Bình - Trưởng Bộ môn Toán 
+THƯ KÝ 
+1. KS. Phạm Hữu Kỳ – Giảng viên Khoa CNTT 
+2. Trần Thị Phương Anh – Thư ký Khoa CNTT 
+ 
+ 
+
+KỶ YẾU HỘI THẢO KHOA HỌC CÔNG NGHỆ LẦN THỨ 6 
+ 
+iii 
+ 
+LỜI GIỚI THIỆU 
+Công nghệ thông tin đã và đang là yếu tố cốt lõi thúc đẩy nền kinh tế - xã hội phát triển 
+mạnh mẽ, đặc biệt trong thời đại kỹ thuật số ngày nay. Sự bùng nổ của các công nghệ mới 
+và ứng dụng tiên tiến đã thay đổi cách chúng ta sống, làm việc và tương tác. Với mục đích 
+tạo ra một diễn đàn để các nhà nghiên cứu, học giả, giảng viên, cũng như các chuyên gia, 
+trao đổi kết quả nghiên cứu, chia sẻ kiến thức, thảo luận quan điểm, ý tưởng về các xu 
+hướng mới nhất trong lĩnh vực công nghệ thông tin và ứng dụng, Khoa Công nghệ thông 
+tin, Trường Đại học Kinh tế - Tài chính Thành Phố Hồ Chí Minh (UEF) tổ chức hội thảo 
+với chủ đề “Hội thảo khoa học công nghệ Khoa CNTT lần 6 năm 2024”.  
+Hội thảo không chỉ nhằm mục đích nâng cao năng lực nghiên cứu mà còn thúc đẩy các 
+phát minh, đổi mới và chuyển giao công nghệ trong lĩnh vực công nghệ thông tin. Đây là 
+cơ hội để các chuyên gia đầu ngành, nhà nghiên cứu, giảng viên và sinh viên gặp gỡ, học 
+hỏi và hợp tác, cùng nhau phát triển và ứng dụng các thành tựu khoa học kỹ thuật vào thực 
+tiễn. Qua đó, hội thảo mong muốn góp phần nâng cao chất lượng giáo dục, nghiên cứu và 
+thực hành trong lĩnh vực công nghệ thông tin. 
+Do thời gian chuẩn bị có hạn, việc biên tập Kỷ yếu này không tránh khỏi những thiếu 
+sót. Ban biên tập rất mong ý kiến đóng góp cũng như sự lượng thứ từ quý độc giả để các 
+kỳ hội thảo sau được tổ chức ngày một tốt hơn, hiệu quả hơn 
+Trân trọng! 
+Tp. Hồ Chí Minh, tháng 6 năm 2024 
+BAN BIÊN TẬP 
+ 
+MỌI Ý KIẾN ĐÓNG GÓP XIN VUI LÒNG GỬI VỀ 
+KHOA CÔNG NGHỆ THÔNG TIN 
+TRƯỜNG ĐẠI HỌC KINH TẾ - TÀI CHÍNH THÀNH PHỐ HỒ CHÍ MINH 
+141-145 ĐIỆN BIÊN PHỦ, P.15, Q.BÌNH THẠNH, TP.HCM 
+
+KỶ YẾU HỘI THẢO KHOA HỌC CÔNG NGHỆ LẦN THỨ 6 
+ 
+iv 
+ 
+MỤC LỤC 
+TỐI ƯU HÓA TRUY VẤN TRONG SQL SERVER: PHƯƠNG PHÁP VÀ ỨNG 
+DỤNG..........................................................................................Trang 1 
+Nguyễn Minh Tuấn - Trường Đại học Kinh Tế - Tài chính Thành Phố Hồ Chí Minh 
+NĂNG LỰC THỰC HIỆN BÀI KIỂM TRA GIỮA KÌ MÔN XÁC SUẤT THỐNG 
+KÊ CỦA CÔNG CỤ CHATGPT.......................................................Trang 14 
+Nguyễn Văn Vinh - Trường Đại học Kinh Tế - Tài chính Thành Phố Hồ Chí Minh 
+RANSOMWARE: MỐI ĐE DỌA TRONG THỜI ĐẠI SỐ........................Trang 24 
+Nguyễn Minh Thắng - Trường Đại học Kinh Tế - Tài chính Thành Phố Hồ Chí Minh 
+PHÁT HIỆN XÂM NHẬP HỆ THỐNG MẠNG SỬ DỤNG BỘ LUẬT DỰA TRÊN 
+CHỮ KÝ.....................................................................................Trang 29 
+Nguyễn Minh Thắng - Trường Đại học Kinh Tế - Tài chính Thành Phố Hồ Chí Minh 
+TÍCH HỢP BIG DATA VÀ ĐIỆN TOÁN ĐÁM MÂY: ĐỘNG LỰC THÚC ĐẨY 
+THAY ĐỔI CHO DOANH NGHIỆP.................................................Trang 35 
+Võ Thị Kim Anh - Trường Đại học Kinh Tế - Tài chính Thành Phố Hồ Chí Minh 
+VẬN DỤNG KỸ NĂNG CHUYÊN MÔN ĐỂ XÂY DỰNG THƯƠNG HIỆU CÁ 
+NHÂN CHO SINH VIÊN NGÀNH THIẾT KẾ ĐỒ HỌA.........................Trang 44 
+Võ Đình Ngà - Trường Đại học Kinh Tế - Tài chính Thành Phố Hồ Chí Minh 
+ỨNG DỤNG BÀI TOÁN VẬN TẢI: TỐI ƯU CHI PHÍ THU GOM RÁC SINH 
+HOẠT CỦA CÁC BỆNH VIỆN..........................................................Trang 59 
+Trương Nhã Bình - Trường Đại học Kinh Tế - Tài chính Thành Phố Hồ Chí Minh 
+Ngô Thuận Dủ - Trường Đại học Kinh Tế - Tài chính Thành Phố Hồ Chí Minh 
+NHỮNG TÁC ĐỘNG CỦA CÔNG NGHỆ DI ĐỘNG ĐẾN HOẠT ĐỘNG KINH 
+DOANH CỦA DOANH NGHIỆP.......................................................Trang 70 
+Hoàng Văn Hiếu - Trường Đại học Kinh Tế - Tài chính Thành Phố Hồ Chí Minh 
+SÁNG TẠO NỘI DUNG AI: CÁCH MẠNG HÓA TƯƠNG LAI CỦA TIẾP THỊ NỘI 
+DUNG .......................................................................................Trang 85 
+Trần Thành Công - Trường Đại học Kinh Tế - Tài chính Thành Phố Hồ Chí Minh 
+
+KỶ YẾU HỘI THẢO KHOA HỌC CÔNG NGHỆ LẦN THỨ 6 
+ 
+Trang 35 
+TÍCH HỢP BIG DATA VÀ ĐIỆN TOÁN ĐÁM MÂY: ĐỘNG LỰC 
+THÚC ĐẨY THAY ĐỔI CHO DOANH NGHIỆP. 
+INTEGRATION OF BIG DATA AND CLOUD COMPUTING: A 
+DRIVING FORCE FOR BUSINESS TRANSFORMATION 
+ 
+Võ Thị Kim Anh1 
+1Trường Đại học Kinh tế - Tài chính Thành Phố Hồ Chí Minh, anhvtk@uef.edu.vn  
+ 
+Tóm tắt: Kỷ nguyên số mang đến sự bùng nổ dữ liệu, tạo ra cả thách thức và cơ hội cho doanh nghiệp. 
+Sự hội tụ của Big Data và điện toán đám mây nổi lên như giải pháp mạnh mẽ, cách mạng hóa cách 
+thức xử lý và khai thác dữ liệu. Bài viết này khám phá tác động biến đổi của sự kết hợp này, đồng thời 
+đề xuất những cân nhắc thực tế cho doanh nghiệp bắt đầu áp dụng Big Data trên nền tảng đám mây. 
+Từ khóa: Kỷ nguyên số, Big Data, điện toán đám mây, biến đổi, doanh nghiệp. 
+Abstract: The digital era has ushered in an unprecedented surge of data, presenting both challenges 
+and opportunities for businesses. The convergence of big data and cloud computing has emerged as a 
+powerful solution, revolutionizing the way data is processed and harnessed. This paper delves into the 
+transformative impact of this integration and outlines practical considerations for businesses 
+embarking on their big data on cloud journey. 
+Key words: Digital Era, Big Data, Cloud Computing, Transformation, Business 
+ 
+1. Sự kết hợp mạnh mẽ giữa Big Data và 
+Điện toán đám mây 
+Kỷ nguyên số đánh dấu sự bùng nổ dữ 
+liệu, mang đến cả thách thức và cơ hội cho 
+doanh nghiệp. Khái niệm Big Data, với đặc 
+trưng khối lượng, tốc độ và sự đa dạng, lần 
+đầu tiên được giới thiệu bởi Laney (2001) [1] 
+đã mở ra một chân trời mới trong việc quản lý 
+và khai thác thông tin. Tuy nhiên, việc quản 
+lý và trích xuất hiệu quả thông tin chi tiết từ 
+đại dương dữ liệu khổng lồ này đã được chứng 
+minh là rất phức tạp. 
+Sự xuất hiện của điện toán đám mây [2] 
+như một bản giao hưởng hoàn hảo cho Big 
+Data, cung cấp giải pháp mạnh mẽ để giải 
+quyết thách thức này. Điện toán đám mây 
+mang đến quyền truy cập theo yêu cầu vào các 
+tài nguyên điện toán có thể mở rộng qua 
+internet, giúp doanh nghiệp tận dụng tối đa 
+sức mạnh của Big Data một cách hiệu quả và 
+linh hoạt. 
+
+KỶ YẾU HỘI THẢO KHOA HỌC CÔNG NGHỆ LẦN THỨ 6 
+ 
+Trang 36 
+Lợi ích của việc kết hợp Big Data và điện 
+toán đám mây được các học giả như 
+Dikaiakos et al. (2009) [3] nhấn mạnh về khả 
+năng mở rộng, hiệu quả chi phí và khả năng 
+truy cập. 
+Đối với khả năng mở rộng: cơ sở hạ tầng 
+đám mây tự động mở rộng lên hoặc xuống dựa 
+trên nhu cầu xử lý, loại bỏ nhu cầu đầu tư ban 
+đầu tốn kém vào phần cứng. Doanh nghiệp chỉ 
+cần trả tiền cho các tài nguyên họ sử dụng, tối 
+ưu hóa chi tiêu cho CNTT và tối đa hóa lợi 
+tức đầu tư [3]. 
+Về hiệu quả về chi phí: doanh nghiệp chỉ 
+trả tiền cho các tài nguyên họ sử dụng, tối ưu 
+hóa chi tiêu cho CNTT và tối đa hóa lợi tức 
+đầu tư [3]. 
+Còn đối với khả năng truy cập: các giải 
+pháp Big Data dựa trên đám mây cung cấp khả 
+năng truy cập mọi lúc, mọi nơi, thúc đẩy cộng 
+tác và sự linh hoạt. 
+Sự kết hợp giữa Big Data và điện toán 
+đám mây mở ra cơ hội to lớn cho doanh 
+nghiệp trong việc nâng cao hiệu quả hoạt 
+động, phát triển sản phẩm mới, gia tăng lợi thế 
+cạnh tranh và thích ứng với môi trường kinh 
+doanh đầy biến động (xem thống kê Bảng 1).
+Bảng 1: Lợi ích của Big Data và Điện toán đám mây  
+Lợi ích 
+Mô tả 
+Khả năng mở rộng 
+Tự động mở rộng/thu hẹp tài nguyên, tối ưu hóa chi phí. 
+Hiệu quả chi phí 
+Chỉ trả tiền cho tài nguyên sử dụng. 
+Khả năng truy cập 
+Truy cập mọi lúc, mọi nơi, thúc đẩy cộng tác. 
+Nâng cao hiệu quả hoạt động 
+Tự động hóa quy trình, cải thiện ra quyết định, tối ưu hóa 
+chuỗi cung ứng. 
+Phát triển sản phẩm mới 
+Xác định xu hướng thị trường và nhu cầu khách hàng. 
+Gia tăng lợi thế cạnh tranh 
+Đưa ra quyết định sáng suốt và nhanh chóng dựa trên dữ liệu. 
+Thích ứng với môi trường kinh doanh 
+biến động 
+Phân tích dữ liệu để dự đoán rủi ro và nắm bắt cơ hội mới. 
+
+KỶ YẾU HỘI THẢO KHOA HỌC CÔNG NGHỆ LẦN THỨ 6 
+ 
+Trang 37 
+2. Ứng dụng thực tiễn của Big Data  
+Phân tích trong lĩnh vực Big Data đang tạo 
+ra tác động to lớn đến nhiều lĩnh vực trong thế 
+giới thực. Các doanh nghiệp đang tận dụng 
+sức mạnh của các giải pháp Big Data dựa trên 
+nền tảng đám mây để nâng cao hiệu quả hoạt 
+động, phát triển sản phẩm mới và gia tăng lợi 
+thế cạnh tranh. Dưới đây là một số ví dụ cụ 
+thể:  
+Trước tiên, đó là ở ngành bán lẻ: Các gã 
+khổng lồ như Amazon và Walmart sử dụng 
+nền tảng đám mây để quản lý hàng tồn kho, 
+cá nhân hóa chiến dịch tiếp thị và thu thập 
+thông tin chi tiết về khách hàng [4]. Ví dụ, câu 
+chuyện về Amazon retail (Amazon.com). 
+Ngày 10 tháng 11 năm 2010 là ngày 
+Amazon.com tắt máy chủ web vật lý cuối 
+cùng 
+trong 
+trung 
+tâm 
+dữ 
+liệu 
+của 
+Amazon.com ([17]). Amazon.com là nhà bán 
+lẻ trực tuyến lớn nhất thế giới. Do 
+Amazon.com tạo ra rất nhiều dữ liệu, trước 
+đây họ đã sử dụng cơ sở dữ liệu Oracle để lưu 
+trữ dữ liệu đó. Nhưng khi Amazon.com phát 
+triển lớn hơn, kích thước cơ sở dữ liệu Oracle 
+của họ tiếp tục tăng lên và điều này khiến việc 
+sao lưu cơ sở dữ liệu Oracle lưu trữ trở nên vô 
+cùng khó khăn. Điều này khiến họ phải cân 
+nhắc đến các dịch vụ điện toán đám mây của 
+AWS. Bằng cách chuyển sang AWS, họ đã 
+trải nghiệm cải thiện hiệu suất gấp 12 lần và 
+giảm thời gian khôi phục từ khoảng 15 giờ 
+xuống 2,5 giờ ([18]). Amazon.com đã vượt 
+qua chi phí cao, hiệu suất chậm và quản lý tốn 
+nhiều nhân công của các bản sao lưu băng 
+truyền thống bằng cách chuyển sang đám mây 
+AWS. Họ tận dụng Amazon S3 vì tính tiết 
+kiệm chi phí, khả năng mở rộng, bảo mật và 
+lưu trữ bền vững, giúp sao lưu và khôi phục 
+nhanh hơn đáng kể. Ngoài ra, việc di chuyển 
+các máy chủ web sang các phiên bản EC2 và 
+thiết lập các kết nối chuyên dụng thông qua 
+AWS Direct Connect đảm bảo hoạt động liền 
+mạch. Nhìn chung, việc chuyển sang AWS 
+giúp giảm chi phí, cải thiện hiệu quả và cung 
+cấp khả năng mở rộng cần thiết để hỗ trợ sự 
+phát triển của Amazon (Bảng 3, 4). 
+Trong ngành chăm sóc sức khỏe: Ngành 
+chăm sóc sức khỏe đang biến đổi nhờ vào Big 
+Data. Nghiên cứu của [5] cho thấy các tổ chức 
+chăm sóc sức khỏe sử dụng điện toán đám 
+mây để phân tích dữ liệu bệnh nhân, từ đó cải 
+thiện chất lượng chăm sóc và thúc đẩy các 
+sáng kiến nghiên cứu. Ví dụ, Mayo Clinic sử 
+dụng Big Data để phát triển các phương pháp 
+điều trị mới, chẩn đoán bệnh chính xác hơn và 
+cải thiện hiệu quả chăm sóc.  
+Và trong ngành dịch vụ tài chính: Phân 
+tích Big Data dựa trên nền tảng đám mây đóng 
+vai trò quan trọng trong việc quản lý rủi ro và 
+phát hiện gian lận trong ngành dịch vụ tài 
+chính. Các nghiên cứu điển hình của [6] cho 
+thấy các tổ chức tài chính sử dụng Big Data 
+để xác định các giao dịch gian lận, đánh giá 
+rủi ro tín dụng và quản lý danh mục đầu tư. Ví 
+dụ, JPMorgan Chase sử dụng Big Data để 
+phát hiện các trường hợp rửa tiền, ngăn chặn 
+
+KỶ YẾU HỘI THẢO KHOA HỌC CÔNG NGHỆ LẦN THỨ 6 
+ 
+Trang 38 
+gian lận thẻ tín dụng và tối ưu hóa danh mục 
+đầu tư.  
+Big Data đang thay đổi cách thức hoạt 
+động của các doanh nghiệp trong nhiều lĩnh 
+vực. Các giải pháp Big Data dựa trên nền tảng 
+đám mây giúp doanh nghiệp tận dụng sức 
+mạnh của dữ liệu để đạt được lợi thế cạnh 
+tranh và thành công trong môi trường kinh 
+doanh đầy biến động. Bảng 2 sau đây thống 
+kê các ứng dụng:
+ 
+Bảng 2: Ứng dụng thực tiễn của Big Data 
+Lĩnh vực 
+Ứng dụng 
+Ví dụ 
+Nguồn trích dẫn 
+Bán lẻ 
+Quản lý hàng tồn kho, cá nhân hóa 
+chiến dịch tiếp thị, thu thập thông tin 
+chi tiết về khách hàng 
+Amazon dự đoán nhu cầu 
+khách hàng, đề xuất sản 
+phẩm phù hợp 
+[4, 18] 
+Chăm sóc 
+sức khỏe 
+Phân tích dữ liệu bệnh nhân, cải thiện 
+chất lượng chăm sóc, thúc đẩy nghiên 
+cứu 
+Mayo Clinic phát triển 
+phương pháp điều trị mới, 
+chẩn đoán chính xác hơn 
+[5] 
+Dịch vụ tài 
+chính 
+Quản lý rủi ro, phát hiện gian lận, 
+đánh giá rủi ro tín dụng, quản lý danh 
+mục đầu tư 
+JPMorgan Chase phát hiện 
+rửa tiền, ngăn chặn gian lận 
+thẻ tín dụng, tối ưu hóa danh 
+mục đầu tư 
+[6] 
+Bảng 3: Bảng so sánh Lưu trữ truyền thống vs Lưu trữ đám mây Amazon S3 
+Đặc điểm 
+Lưu trữ truyền thống với tape (qua băng đĩa) 
+Lưu trữ đám mây Amazon S3 
+Chi phí 
+Chi phí trả trước cao cho phần cứng băng, dung 
+lượng trung tâm dữ liệu và giấy phép phần mềm. 
+Mô hình trả tiền theo nhu cầu, loại 
+bỏ chi phí trả trước. 
+Khả năng 
+mở rộng 
+Khó mở rộng dung lượng lưu trữ cho nhu cầu dữ 
+liệu ngày càng tăng. 
+Dung lượng lưu trữ có thể mở rộng 
+cao để đáp ứng nhu cầu phát triển 
+của Amazon. 
+
+KỶ YẾU HỘI THẢO KHOA HỌC CÔNG NGHỆ LẦN THỨ 6 
+ 
+Trang 39 
+Đặc điểm 
+Lưu trữ truyền thống với tape (qua băng đĩa) 
+Lưu trữ đám mây Amazon S3 
+Hiệu suất 
+Sao lưu và phục hồi chậm do thời gian đọc băng. 
+Sao lưu và phục hồi nhanh hơn đáng 
+kể so với băng. 
+Độ bền 
+Cần nhiều bản sao lưu băng để đảm bảo độ bền dữ 
+liệu, dễ bị lỗi phần cứng. 
+Lưu trữ cực kỳ bền vững với độ bền 
+11 số chín (99.999999999%). 
+Quản lý 
+Yêu cầu nhân viên có kỹ năng để quản lý cơ sở hạ 
+tầng băng. 
+Giảm khối lượng công việc với nhu 
+cầu quản lý tối thiểu. 
+Bảng 4: Bảng so sánh Máy chủ cục bộ vs AWS EC2 đám mây 
+Đặc điểm 
+Máy chủ On-premises 
+Chuyển sang AWS EC2 
+Kết nối 
+Phụ thuộc vào tài nguyên trong 
+trung tâm dữ liệu cục bộ. 
+VPC và AWS Direct Connect cung cấp các kết nối 
+chuyên dụng để giao tiếp liền mạch. 
+Độ phức tạp 
+của di chuyển 
+Quá trình di chuyển phức tạp cho 
+máy chủ web, cơ sở dữ liệu và 
+các công cụ. 
+VPC và Direct Connect đơn giản hóa việc di 
+chuyển bằng cách mở rộng trung tâm dữ liệu vào 
+AWS. 
+3. Giải quyết thách thức và triển khai hiệu 
+quả Big Data dựa trên điện toán đám mây 
+Mặc dù sự hội tụ của Big Data và điện 
+toán đám mây mang lại nhiều lợi ích, nó cũng 
+đặt ra những thách thức cần được xem xét cẩn 
+thận. Bảo mật dữ liệu là một trong những 
+mối quan tâm hàng đầu. Pearson (2013) [7] 
+đã nhấn mạnh tầm quan trọng của việc áp 
+dụng các biện pháp bảo mật thích hợp để bảo 
+vệ dữ liệu nhạy cảm trên đám mây. Các biện 
+pháp này bao gồm: mã hóa dữ liệu, kiểm soát 
+quyền truy cập, và tuân thủ các quy định. 
+Mã hóa mạnh mẽ là dữ liệu cần được mã 
+hóa bằng các thuật toán mạnh để ngăn chặn 
+truy cập trái phép. Kiểm soát quyền truy cập 
+là sự thiết lập các quy trình kiểm soát chặt chẽ 
+để xác định người dùng nào có quyền truy cập 
+vào dữ liệu và mức độ truy cập của dữ liệu đó. 
+
+KỶ YẾU HỘI THẢO KHOA HỌC CÔNG NGHỆ LẦN THỨ 6 
+ 
+Trang 40 
+Đối với việc tuân thủ các quy định, như là, 
+doanh nghiệp cần tuân thủ các quy định về 
+bảo mật dữ liệu, chẳng hạn như quy định về 
+bảo vệ dữ liệu (GDPR) của Liên minh châu 
+Âu. 
+Quản trị dữ liệu là một yếu tố quan trọng 
+khác cần được xem xét khi triển khai các giải 
+pháp Big Data trên nền tảng đám mây. 
+Achanta (2023) [8] và Setiyawan & Patel 
+(2019) [9] đã nêu bật tầm quan trọng của 
+việc: chất lượng dữ liệu, và tuân thủ quy định. 
+Đảm bảo chất lượng dữ liệu thực hiện bằng 
+việc xem xét dữ liệu tính chính xác, đầy đủ 
+và nhất quán để có thể phân tích hiệu quả. 
+Doanh nghiệp cần tuân thủ các quy định về 
+quản lý dữ liệu, chẳng hạn như Sarbanes-
+Oxley Act (SOX) của Hoa Kỳ.  
+Ngoài ra, còn có một số thách thức khác 
+cần được xem xét khi triển khai các giải pháp 
+Big Data trên nền tảng đám mây, bao gồm: sự 
+tương tác, kỹ năng nhân sự, và chi phí triển 
+khai – vận hành. Về khả năng tương tác, thì 
+các giải pháp Big Data và điện toán đám mây 
+cần tương thích với các hệ thống hiện có của 
+doanh nghiệp. Đối với các kỹ năng, thì doanh 
+nghiệp cần có nhân viên có kỹ năng cần thiết 
+để sử dụng các giải pháp Big Data và điện toán 
+đám mây. Còn lại, đối với quản lý chi phí, thì 
+doanh nghiệp cần tính toán chi phí triển khai 
+và vận hành các giải pháp Big Data và điện 
+toán đám mây. 
+Bằng cách xem xét cẩn thận những thách 
+thức và cân nhắc này, các doanh nghiệp có thể 
+tận dụng hiệu quả sức mạnh của Big Data và 
+điện toán đám mây để đạt được lợi thế cạnh 
+tranh (Bảng 3). 
+Bảng 5: Giải quyết thách thức và triển khai hiệu quả Big Data dựa trên điện toán đám mây 
+Thách thức 
+Giải pháp 
+Nguồn trích dẫn 
+Bảo mật dữ liệu 
+Mã hóa mạnh mẽ, kiểm soát quyền truy 
+cập, tuân thủ quy định 
+[7] 
+Quản trị dữ liệu 
+Đảm bảo chất lượng dữ liệu, tuân thủ 
+quy định 
+[8, 9] 
+Khả năng tương tác 
+Tương thích với hệ thống hiện có 
+[10] 
+Kỹ năng 
+Nâng cao kỹ năng nhân viên 
+[11, 12] 
+Chi phí 
+Tính toán chi phí triển khai và vận hành 
+[13, 14] 
+
+KỶ YẾU HỘI THẢO KHOA HỌC CÔNG NGHỆ LẦN THỨ 6 
+ 
+Trang 41 
+ 
+4. Tương lai của việc ra quyết định dựa 
+trên dữ liệu 
+Tương lai của việc ra quyết định dựa trên 
+dữ liệu sẽ được định hình bởi sự hội tụ ngày 
+càng tăng giữa Big Data và điện toán đám 
+mây. Các xu hướng mới nổi như điện toán 
+biên và điện toán không máy chủ hứa hẹn sẽ 
+cách mạng hóa cách thức doanh nghiệp quản 
+lý và sử dụng dữ liệu. 
+Theo Banjanovic & Husaković (2023) 
+[15], điện toán biên tích hợp phân tích Big 
+Data dựa trên nền tảng đám mây với xử lý dữ 
+liệu thời gian thực tại ranh giới của mạng. 
+Điều này cho phép doanh nghiệp truy cập và 
+phân tích dữ liệu từ các thiết bị IoT và các 
+nguồn khác nhanh chóng và hiệu quả hơn. 
+McGrath & Brenner (2017) [16] cho rằng 
+điện toán không máy chủ đơn giản hóa việc 
+phát triển và triển khai ứng dụng dựa trên dữ 
+liệu. Nhờ vậy, doanh nghiệp có thể thúc đẩy 
+đổi mới và tăng trưởng nhanh hơn. 
+Sự kết hợp của Big Data, điện toán đám 
+mây và các xu hướng mới nổi khác sẽ tạo ra 
+một tương lai nơi dữ liệu đóng vai trò trung 
+tâm trong việc ra quyết định, đổi mới và tăng 
+trưởng (Bảng 4). Doanh nghiệp cần nắm bắt 
+những xu hướng này để thành công trong thời 
+đại dữ liệu. 
+Bảng 6: Tương lai của việc ra quyết định dựa trên dữ liệu 
+Xu hướng 
+Mô tả 
+Tác động 
+Nguồn trích dẫn 
+Điện toán 
+biên 
+Tích hợp phân tích Big Data dựa 
+trên nền tảng đám mây với xử lý dữ 
+liệu thời gian thực tại ranh giới của 
+mạng 
+Truy cập và phân tích dữ 
+liệu nhanh chóng, hiệu quả 
+[15] 
+Điện toán 
+không máy 
+chủ 
+Đơn giản hóa việc phát triển và triển 
+khai ứng dụng dựa trên dữ liệu 
+Thúc đẩy đổi mới và tăng 
+trưởng 
+[16] 
+Kết luận 
+Sự tích hợp của Big Data và điện toán 
+đám mây mang đến cho doanh nghiệp khả 
+năng lưu trữ, xử lý và phân tích dữ liệu mạnh 
+mẽ. Nhờ đó, doanh nghiệp có thể nâng cao 
+hiệu quả hoạt động, hiểu rõ hơn về khách 
+hàng, phát triển sản phẩm mới và gia tăng lợi 
+thế cạnh tranh. Việc nắm bắt sức mạnh của Big 
+Data và điện toán đám mây là yếu tố then chốt 
+để doanh nghiệp thành công trong kỷ nguyên 
+số. 
+
+KỶ YẾU HỘI THẢO KHOA HỌC CÔNG NGHỆ LẦN THỨ 6 
+ 
+Trang 42 
+Để áp dụng Big Data và điện toán đám 
+mây hiệu quả, doanh nghiệp cần xác định rõ 
+mục tiêu, lựa chọn giải pháp phù hợp, xây 
+dựng chiến lược quản trị dữ liệu, đầu tư đào 
+tạo nhân viên và triển khai từng bước từ dự 
+án nhỏ đến mở rộng dần. Việc áp dụng thành 
+công sẽ mang lại lợi thế cạnh tranh và giúp 
+doanh nghiệp thành công trong kỷ nguyên số. 
+Với sự hoạch định cẩn trọng và thực thi 
+hiệu quả, doanh nghiệp có thể khai thác sức 
+mạnh của Big Data và điện toán đám mây để 
+đạt được những lợi ích to lớn. 
+Tài liệu tham khảo 
+[1] Laney, D. (2001) 3D Data Management: 
+Controlling Data Volume, Velocity and Variety. 
+META Group Research Note, 6. 
+[2] Armbrust, M., Griffith, R., Joseph, A. D., Katz, 
+R., Konwinski, A., Lee, G., Patterson, D., et al. 
+(2010). 
+A 
+view 
+of 
+cloud 
+computing. 
+Communications of the ACM, 53(4), 50-58. 
+ACM. 
+[3] Dikaiakos, M., Katsaros, D., Mehra, P., Pallis, G., 
+& Vakali, A. (2009). “Cloud computing: 
+Distributed internet computing for IT and 
+scientific research”. IEEE Internet Computing, 
+13(5), 10-13. 
+[4] Chen, W., Li, J., & Jin, X. J. (2016). The 
+replenishment policy of agri-products with 
+stochastic demand in integrated agricultural 
+supply chains. Expert Systems with Applications, 
+48, 55-66. 
+[5] Halamka, J. (2014). The Argonaut Project 
+Charter. Life as a Healthcare CIO. 
+[6] Rizvi, S. (2021). Role of big data in financial 
+institutions for financial fraud. SSRN Electronic 
+Journal, 4, 35. 
+[7] Pearson, S. (2013). Privacy, Security and Trust in 
+Cloud Computing. In: Pearson, S., Yee, G. (eds) 
+Privacy and Security for Cloud Computing. 
+Computer 
+Communications 
+and 
+Networks. 
+Springer, London. https://doi.org/10.1007/978-1-
+4471-4189-1_1  
+[8]  Achanta, M. (2023). Data governance in the age of 
+cloud computing: Strategies and considerations. 
+International Journal of Science and Research 
+(IJSR), 12, 1338-1343. 
+[9]  Setiyawan, D., & Patel, C. (2019). A proposed 
+model of IT governance within cloud computing 
+and data management in higher education. SSRN 
+Electronic Journal, 6, 19-25. 
+[10] Agrawal, D. & Das, S. & Abbadi, A. (2011). Big 
+Data and Cloud Computing: Current State and 
+Future 
+Opportunities. 
+ACM 
+International 
+Conference 
+Proceeding 
+Series. 
+530-533. 
+10.1145/1951365.1951432. 
+[11] Ghaleb, E.A.A.; Dominic, P.D.D.; Fati, S.M.; 
+Muneer, A.; Ali, R.F. 2021. The Assessment of Big 
+Data Adoption Readiness with a Technology–
+Organization–Environment 
+Framework: 
+A 
+Perspective 
+towards 
+Healthcare 
+Employees. 
+Sustainability 
+2021, 
+13, 
+8379. 
+https://doi.org/10.3390/su13158379 
+[12] Shamim, S., Zeng, J., Choksy, U.S. & Shariq, S. 
+M. 2020. Connecting big data management 
+capabilities with employee ambidexterity in 
+Chinese multinational enterprises through the 
+mediation of big data value creation at the 
+employee level, International Business Review, 
+Volume 29, Issue 6, 101604, ISSN 0969-5931, 
+https://doi.org/10.1016/j.ibusrev.2019.101604. 
+
+KỶ YẾU HỘI THẢO KHOA HỌC CÔNG NGHỆ LẦN THỨ 6 
+ 
+Trang 43 
+[13] Muniswamaiah, M., Agerwala, T. & Tappert, C. 
+(2019). Big data in cloud computing review and 
+opportunities.  International Journal of Computer 
+Science & Information Technology (IJCSIT) Vol 
+11, 
+No 
+4. 
+https://arxiv.org/ftp/arxiv/papers/1912/1912.108
+21.pdf 
+[14] El-Seoud, S. A., El-Sofany, H. F., Abdelfattah, 
+M. A. F., & Mohamed, R. (2017). Big Data and 
+Cloud Computing: Trends and Challenges. 
+International Journal of Interactive Mobile 
+Technologies 
+(iJIM), 
+11(2), 
+pp. 
+34–52. 
+https://doi.org/10.3991/ijim.v11i2.6561 
+[15] Banjanovic, M. L., & Husaković, A. (2023). Edge 
+AI: Reshaping the Future of Edge Computing 
+with 
+Artificial 
+Intelligence. 
+10.5644/PI2023.209.07. 
+[16] McGrath, G., & Brenner, P. R. (2017). 
+"Serverless 
+Computing: 
+Design, 
+Implementation, and Performance," 2017 IEEE 
+37th International Conference on Distributed 
+Computing Systems Workshops (ICDCSW), 
+Atlanta, GA, USA, 2017, pp. 405-410, doi: 
+10.1109/ICDCSW.2017.36. 
+[17] [Amazon Web Services]. (2012, December 10). 
+AWS re: Invent ENT 205- Drinking Our Own 
+Champagne 
+[Video]. 
+Https://www.Youtube.com/User/AmazonWebSe
+rvices/Cloud 
+. 
+https://www.youtube.com/watch?v=f45Uo5rw6
+YY  
+[18] Chavan, A. (2020, September 21). How Amazon 
+retail (Amazon.Com) uses the AWS cloud. 
+Medium. 
+Retrieved 
+June 
+7, 
+2024, 
+from 
+https://ankush-chavan.medium.com/how-
+amazon-retail-amazon-com-uses-the-aws-cloud-
+87ed6f456ac8
+ 
+View publication stats
+

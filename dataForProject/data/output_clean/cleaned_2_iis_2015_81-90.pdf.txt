@@ -1,0 +1,321 @@
+today big data draws a lot of attention in the it world the rapid rise of the internet and the digital economy has
+fuelled an exponential growth in demand for data storage and analytics and it department are facing tremendous
+collecting and storing more data than ever before is because their business depends on it the type of information
+being created is no more traditional database driven data referred to as structured data rather it is data that
+include documents images audio video and social media contents known as unstructured data or big data big
+take proactive actions and give way to better strategic decision making further this paper analyzes the adoption
+usage and impact of to the business value of an enterprise to improve its competitive advantage
+using a set of data algorithms for large data sets such as hadoop and mapreduce
+big data analytics hadoop mapreduce
+introduction
+traditional database big data consists of different types of key technologies like hadoop hdfs nosql
+mapreduce mongodb cassandra pig hive and hbase that work together to achieve the end goal like
+extracting value from data that would be previously considered dead according to a recent market report published
+by transparency market research the total value of big data was estimated at 6 3 billion as of but by
+it s expected to reach the staggering level of 3 billion that s almost a percent increase forrester
+research estimates that organizations effectively utilize less than 5 percent of their available data this is because
+the rest is simply too expensive to deal with big data is derived from multiple sources it involves not just
+traditional relational data but all paradigms of unstructured data sources that are growing at a significant rate for
+instance machine derived data multiplies quickly and contains rich diverse content that needs to be discovered
+another example human derived data from social media is more textual but the valuable insights are often
+overloaded with many possible meanings
+reflect the challenges of data that are too vast too unstructured and too fast moving to be
+managed by traditional methods from businesses and research institutions to governments organizations now
+routinely generate data of unprecedented scope and complexity gleaning meaningful information and competitive
+advantages from massive amounts of data has become increasingly important to organizations globally trying to
+efficiently extract the meaningful insights from such data sources quickly and easily is challenging thus analytics
+has become inextricably vital to realize the full value of big data to improve their business performance and
+increase their market share the tools available to handle the velocity and variety of big data have
+improved greatly in recent years in general these technologies are not prohibitively expensive and much of the
+software is open source hadoop the most commonly used framework combines commodity hardware with open
+source software it takes incoming streams of data and distributes them onto cheap disks it also provides tools for
+analyzing the data however these technologies do require a skill set that is new to most it departments which will
+need to work hard to integrate all the relevant internal and external sources of data although attention to technology
+isn t sufficient it is always a necessary component of a big data strategy this paper discusses some of the most
+commonly used big data technologies mostly open source that work together as a system for
+leveraging large quantities of unstructured data to make more informed decisions
+review of literature
+capture storage and analysis data sources extend beyond the traditional corporate database to include emails
+mobile device outputs and sensor generated data where data is no longer restricted to structured database records
+but rather unstructured data having no standard formatting since big data and analytics is a relatively new
+and evolving phrase there is no uniform definition various stakeholders have provided diverse and sometimes
+contradictory definitions one of the first widely quoted definitions of big data resulted from the gartner report of
+gartner proposed that big data is defined by three v s velocity and variety gartner expanded its
+definition in to include veracity representing requirements about trust and uncertainty pertaining to data and
+the outcome of data analysis in a report idc defined the 4th v as value highlighting that big data
+information from call logs mobile banking transactions online user generated content such as blog posts and
+tweets online searches and images which can be transformed into valuable business information using
+computational techniques to unveil trends and patterns between datasets
+another dimension of the big data definition involves technology big data is not only large and complex but it
+requires innovative technology to analyze and process in the national institute of standard and technology
+technology big data exceed the capacity or capability of current or conventional methods and systems and enable
+practitioners have difficulties to incorporate it into their complex decision making that adds business value in
+mckinsey company conducted a survey of 1 executives across various regions industries and company
+sizes in which percent of respondents said that their companies are focusing big data efforts on cuser
+insights segmentation and targeting to improve overall performance an even higher number of respondents
+percent said their companies should focus efforts on using data and analytics to generate these insights yet just
+one fifth said that their organizations have fully deployed data and analytics to generate insights in one business unit
+or function and only percent use data to generate insights across the company as these survey results show the
+question is no longer whether big data can help business but how can business derive maximum results from big
+predictive analytics
+predictive analytics is the use of historical data to forecast on consumer behavior and trends it is the use of
+past historical data to predict future trends this analysis makes use of the statistical models and machine learning
+algorithms to identify patterns and learn from historical data predictive analysis can also be defined as a
+process that uses machine learning to analyze data and make predictions
+sixty seven percent of businesses aim at using predictive analytics to create more strategic marketing campaign in
+future and sight competitive advantage as the prime benefit of predictive analysis broadly speaking
+search typically a large e commerce site offers thousands of product and services for sale navigating and
+searching for a product out of thousands on a website could be a major setback to consumers however with the
+closely suit the consumer s taste
+using a technology called collaborative filtering a database of historical user preferences is created when a new
+cuser access the ecommerce site the cuser is matched with the database of preferences in order to discover a
+preference class that closely matches the cuser taste these products are then recommended to the cuser
+another technology that is used in ecommerce is the clustering algorithm clustering algorithm works by identifying
+groups of users that have similar preferences these users are then clustered into a single group and are given a
+unique identifier
+new cusers cluster are predicted by calculating the average similarities of the individual members in that cluster
+hence a user could be a partial member of more than one cluster depending of the weight of the user s average
+opinion advanced analytics is defined as the scientific process of transforming data into insight for making
+better decisions as a formal discipline advanced analytics have grown under the operational research domain
+there are some fields that have considerable overlap with analytics and also different accepted classifications for
+the types of analytics 2
+big data technologies
+apache flume
+apache flume is a distributed reliable and available system for efficiently collecting aggregating and moving large
+amounts of log data from many different sources to a centralized data store flume deploys as one or more agents
+each contained within its own instance of the java virtual machine jvm agents consist of three pluggable
+components sources sinks and channels flume agents ingest incoming streaming data from one or more sources
+data ingested by a flume agent is passed to a sink which is most commonly a distributed file system like hadoop
+multiple flume agents can be connected together for more complex workflows by configuring the source of one
+agent to be the sink of another flume sources listen and consume events events can range from newline terminated
+strings in stdout to http posts and rpc calls it all depends on what sources the agent is configured to use
+flume agents may have more than one source but at the minimum they require one sources require a name and a
+type the type then dictates additional configuration parameters
+channels are the mechanism by which flume agents transfer events from their sources to their sinks events written
+to the channel by a source are not removed from the channel until a sink removes that event in a transaction this
+allows flume sinks to retry writes in the event of a failure in the external repository such as hdfs or an outgoing
+network connection for example if the network between a flume agent and a hadoop cluster goes down the
+channel will keep all events queued until the sink can correctly write to the cluster and close its transactions with the
+channel sink is an interface implementation that can remove events from a channel and transmit them to the next
+agent in the flow or to the event s final destination and also sinks can remove events from the channel in
+transactions and write them to output transactions close when the event is successfully written ensuring that all
+events are committed to their final destination
+apache sqoop
+apache sqoop is a cli tool designed to transfer data between hadoop and relational databases sqoop can import
+data from an rdbms such as mysql or oracle database into hdfs and then export the data back after data has
+been transformed using mapreduce sqoop also has the ability to import data into hbase and hive sqoop connects
+to an rdbms through its jdbc connector and relies on the rdbms to describe the database schema for data to be
+imported both import and export utilize mapreduce which provides parallel operation as well as fault tolerance
+during import sqoop the table row by row into hdfs because import is performed in parallel the output in
+hdfs is multiple files
+apache pig
+apache s pig is a major project which is lying on top of hadoop and provides higher level language to use
+hadoop s mapreduce library pig provides the scripting language to describe operations like the reading filtering
+and transforming joining and writing data which are exactly the same operations that mapreduce was originally
+designed for instead of expressing these operations in thousands of lines of java code which uses mapreduce
+directly apache pig lets the users express them in a language that is not unlike a bash or perl script
+pig was initially developed at yahoo research around but moved into the apache software foundation in
+unlike sql pig does not require that the data must have a schema so it is well suited to process the
+complete like sql which means it is at least as powerful as a relational algebra turing completeness requires
+conditional constructs an infinite memory model and looping constructs
+apache hive
+hive is a technology developed by facebook that turns hadoop into a data warehouse complete with a dialect of
+sql for querying being a sql dialect hiveql is a declarative language in piglatin you specify the data flow
+but in hive we describe the result we want and hive figures out how to build a data flow to achieve that result
+unlike pig in hive a schema is required but you are not limited to only one schema like piglatin and sql
+hiveql itself is a relationally complete language but it is not a turing complete language
+apache zookeeper
+apache zoo keeper is an effort to develop and maintain an open source server which enables highly reliable
+distributed coordination it provides a distributed configuration service a synchronization service and a naming
+configuration information zookeeper is especially fast with workloads where to the data are more common
+than writes the ideal write ratio is about 1 zookeeper is replicated over a set of hosts called an ensemble
+and the servers are aware of each other and there is no single point of failure
+figure 1 intel manager for hadoop 3
+mongodb
+mongodb is an open source document oriented nosql database that has lately attained some space in the data
+industry it is considered as one of the most popular nosql databases competing today and favors master slave
+replication the role of master is to perform and writes whereas the slave confines to copy the data received
+from master to perform the operation and backup the data the slaves do not participate in write operations
+but may select an alternate master in case of the current master failure mongodb uses binary format of json like
+documents underneath and believes in dynamic schemas unlike the traditional relational databases the query
+system of mongodb can return particular fields and query set compass search by fields range queries regular
+expression search etc and may include the user defined complex javascript functions as hinted already
+mongodb practice flexible schema and the document structure in a grouping called collection may vary and
+common fields of various documents in a collection can have disparate types of the data
+develop the cusized systems that use mongodb as their backend player there is an increasingly demand of
+in order to efficiently address the challenges of big data the leading vendor developed the oracle nosql database
+it was built by oracle berkeley db team and the berkeley db java edition is the building block of oracle nosql
+berkeley db is a robust and scalable key value store and used as the underlying storage for several popular data
+model such as amazon dynamo geniedb memcachedb and voldemort
+there are several other database systems that discern the strength of berkeley db and have attained greater
+scalability throughput and reliability with little tuning efforts it is an efficient and a resilient transaction model that
+oracle database and hadoop it offers scalable throughput with bounded latency the model very well
+accommodates the horizontal scaling with dynamic annexation of new capacity citing high availability the design
+of high availability rapid failover in the event of a node failure etc are achieved by replicating the storage nodes
+apache cassandra
+apache cassandra is the yet another open source nosql database solution that has gained industrial reputation
+which is able to handle big data requirements it is a highly scalable and high performance distributed database
+businesses it has a built for scale architecture that can handle petabytes of information and thousands of concurrent
+users operations per second as easily as it can manage much smaller amount of data and user traffic it has a peer to
+peer design that offers no single point of failure for any database process or function in addition to the location
+independence capabilities that equate to a true network independent method of storing and accessing data data can
+data is represented in cassandra via column families that are dynamic in nature and accommodate all modifications
+online
+apache hadoop
+the apache hadoop software library is a framework that enables the distributed processing of large data sets across
+clusters of computers it is designed to scale up from single servers to thousands of machines with each offering
+local computation and storage the basic notion is to allow a single query to find and collect results from all the
+technological challenges in software systems research today is to provide mechanisms for storage manipulation and
+information retrieval on large amount of data web services and social media produce together an impressive
+amount of data reaching the scale of petabytes daily facebook these data may contain valuable
+information which sometimes is not properly explored by existing systems most of this data is stored in a non
+structured manner using different languages and format which in many cases are in compatible
+parallel and distributed computing currently has a fundamental role in data processing and information extraction of
+large datasets over the last years commodity hardware became part of clusters since the x86 platform cope with
+the need of having an overall better cost performance ratio while decreasing maintenance cost apache hadoop is a
+manipulation of large amount of data the framework was designed over the mapreduce paradigm and uses the
+hdfs as a storage file system hadoop presents key characteristics when performing parallel and distributed
+computing such as data integrity availability scalability exception handling and failure recovery
+hadoop is a popular choice when you need to filter sort or pre process large amounts of new data in place and
+distill it to generate denser data that theoretically contains more information pre processing involves filtering new
+data sources to make them suitable for additional analysis in a data warehouse hadoop is a top level open source
+distributions packaging the basic software stack with other hadoop software projects such as apache hive apache
+pig and apache sqoop these distributions must integrate with data warehouses databases and other data
+management products so data can move among hadoop clusters and other environments to expand the data pool to
+process or query
+figure 2 data architecture with hadoop integrated with existing data system
+mapreduce is the original massively scalable parallel processing framework commonly used with hadoop and
+other components such as the hadoop distributed file system hdfs and yarn yarn can be described as a
+large scale distributed operating system for big data implementations as hadoop has matured the batch oriented
+streaming processing and advanced implementations such as the aforementioned machine learning
+mapreduce
+mapreduce is the model of distributed data processing introduced by google in the fundamental concept of
+mapreduce is to divide problems into two parts a map function that processes source data into sufficient statistics
+and a reduce function that merges all sufficient statistics into a final answer by definition any number of
+concurrent map functions can be run at the same time without intercommunication once all the data has had the
+batch processing and high speed data retrieval common in web search scenarios mapreduce provides the fastest
+most cost effective and most scalable mechanism for returning results today most of the leading technologies for
+managing big data are developed on mapreduce with mapreduce there are few scalability limitations but
+leveraging it directly does require writing and maintaining a lot of code
+apache splunk
+splunk is a general purpose search analysis and reporting engine for time series text data typically machine data
+compliance it operations management and providing analytics for the business the splunk engine is optimized for
+quickly indexing and persisting unstructured data loaded into the system specifically splunk uses a minimal
+schema for persisted data events consist only of the raw event text implied timestamp source typically the
+filename for file based inputs source type an indication of the general type of data and host where the data
+originated
+once data enters the splunk system it quickly proceeds through processing is persisted in its raw form and is
+indexed by the above fields along with all the in the raw event text indexing is an essential element of the
+canonical super grep use case for splunk but it also makes most retrieval tasks faster any more sophisticated
+processing on these raw events is deferred until search time this serves four important goals indexing speed is
+increased as minimal processing is performed bringing new data into the system is a relatively low effort exercise as
+no schema planning is needed the original data is persisted for easy inspection and the system is resilient to change
+as data parsing problems do not require reloading or re indexing the data
+big data framework
+apache spark
+apache spark an open source big data processing framework built around speed ease of use and sophisticated
+analytics it was originally developed in in uc berkeley s amp lab and open sourced in as an apache
+project hadoop as a big data processing technology has been around for ten years and has proven to be the solution
+of choice for processing large data sets mapreduce is a great solution for one pass computations but not very
+efficient for use cases that require multi pass computations and algorithms each step in the data processing
+workflow has one map phase and one reduce phase and you ll need to convert any use case into mapreduce pattern
+to leverage this solution spark takes mapreduce to the next level with less expensive shuffles in the data
+processing with capabilities like in memory data storage and near real time processing the performance can be
+several times faster than other big data technologies
+workflows it provides a higher level api to improve developer productivity and a consistent architect model for big
+data solutions spark holds intermediate results in memory rather than writing them to disk which is very useful
+especially when you need to work on the same dataset multiple times it s designed to be an execution engine that
+works both in memory and on disk spark operators perform external operations when data does not fit in memory
+spark can be used for processing datasets that larger than the aggregate memory in a cluster spark will attempt to
+store as much as data in memory and then will spill to disk it can store part of a data set in memory and the
+remaining data on the disk you have to look at your data and use cases to assess the memory requirements with
+this in memory data storage spark comes with a great performance advantage
+programming languages like scala java python clojure and r other than spark core api there are additional
+libraries that are part of the spark ecosystem and provide additional capabilities in spark
+streaming is one among the spark library that can be used for processing the real time streaming data this is based
+on micro based on micro batch style of computing and processing spark sql provides the capabilities to expose the
+spark datasets over jdbc api and allow running the sql like queries on spark data using traditional bi and
+visualization tools mllib graphx are some other libraries from spark
+competitive advantages
+thomas h davenport was perhaps the first to observe in his harvard business review article published in january
+competing on analytics how companies who orientated themselves around fact based management
+reality is that it takes continuous improvement to become an analytics driven organization in a presentation given at
+the strata new york conference in september mckinsey company showed the eye opening year
+category growth rate differences see figure 7 below between businesses that smartly use their big data and those
+that do not
+amazon uses big data to monitor track and secure 1 5 billion items in its inventory that are laying around
+when a cuser will purchase a product and pre ship it to a depot close to the final destination wal mart handles
+more than a million cuser transactions each hour imports information into databases to contain more than
+can generate to times the data of conventional bar code systems ups deployment of telematics in their
+freight segment helped in their global redesign of logistical networks 6 amazon is a big data giant and the largest
+online retail store the company pioneered e commerce in many different ways but one of its biggest successes was
+the personalized recommendation system which was built from the big data it gathers from its millions of
+cusers transactions
+the u s federal government collects more than raw and geospatial datasets from agencies and sub
+access to information not deemed private or classified professional social network linkedin uses data from its more
+than million users to build new social products based on users own definitions of their skill sets silver spring
+networks deploys smart two way power grids for its utility cusers that utilize digital technology to deliver more
+reliable energy to consumers from multiple sources and allow homeowners to send information back to utilities to
+trends to identify problems with its healthcare system revealing services that were both medically ineffective and
+expensive
+conclusion
+today s technology landscape is changing fast organizations of all shapes and sizes are being pressured to be data
+driven and to do more with less even though big data technologies are still in a nascent stage relatively speaking
+the impact of the 3v s of big data which now is 5v s cannot be ignored the time is now for organizations to begin
+planning for and building out their hadoop based data lake organizations with the right infrastructures talent and
+they can use big data to unveil new patterns and trends gain additional insights and begin to find answers to
+what s learned the more likely they are to reveal answers that can add value to the top line of the business this is
+where the returns on big data investments multiply and the transformation begins harnessing big data insight
+data driven decisions always tend to be better decisions
+references
+1 apache software foundation apache zookeeper retrieved april 5 from
+2 chae b sheu c yang c and olson d the impact of advanced analytics and data accuracy on
+3 chambers c raniwala a adams s henry r bradshaw r and weizenbaum n flume java
+easy efficient data parallel pipelines google inc retrieved april 1 from
+4 cisco systems cisco ucs common platform architecture version 2 cpa v2 for big data with
+comprehensive data protection using intel distribution for apache hadoop retrieved march from
+th_intel html
+5 datastax corporation october big data beyond the hype why big data matters to you white
+paper retrieved march from
+bigdata pdf
+6 davenport t patil d data scientist the sexiest job of the 21st century harvard business review
+7 dhawan s rathee s using hadoop components like pig and hive american
+international journal of research in science technology engineering mathematics retrieved
+service white paper retrieved from
+journey big data ba wp pdf
+emc corporation big data big transformations white paper retrieved from
+emc solutions group july big data as a service white paper retrieved from
+enterprise hadoop the ecosystem of projects retrieved from
+george l september getting started with big data architecture retrieved april 5 from
+ibm corporation ibm big data platform retrieved from
+software in data bigdata enterprise html
+intel corporation extract transform and load big data with apache hadoop white
+paper retrieved april 3 from
+with hadoop pdf
+mcclary d june acquiring big data using apache flume retrieved march 3 from
+millard s big data brewing value in human capital management ventana research retrieved
+april 2 from
+capital management
+mosavi a and vaezipour a developing effective tools for predictive analytics and informed
+decisions technical report of tallinn
+oracle corporation march advanced analytics in oracle database white
+paper retrieved march 5 from
+analytics advanced analytics wp 12c pdf sssourcesiteid ocomen
+oracle enterprise architecture april an enterprise architect s guide to big data reference
+architecture overview white paper retrieved from
+penchikala s january big data processing with apache spark part 1 introduction retrieved from
+retrieved april5 from
+and tuning information into intelligence 1st edition pearson nj
+sarwar b karypis g konstan j and riedl j recommendation systems for large e commerce
+scalable neighborhood formation using clustering in proceedings of the fifth international conference on
+computer and information technology 1
+sorkin s splunk technical paper large scale unstructured data retrieval and analysis using
+splunk retrieved april from
+briefs splunk and mapreduce pdf
+the bloor group ibm and the big data information architecture retrieved april 3 from
+tiwari s using oracle berkeley db as a nosql data store retrieved april from
+us 3 bn by retrieved june from
+villars r l olofson c w eastwood m june big data what it is and why you should care idc
+white paper framingham ma idc
+wolpe t march how facebook is speeding up the pesto sql query engine retrieved april 3
+zahari et al spark cluster computing with working sets retrieved april 7 from

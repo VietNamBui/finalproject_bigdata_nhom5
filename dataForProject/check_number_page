@@ -1,0 +1,8 @@
+import pdfplumber
+import os
+
+data_dir = "data/bigdata/"
+for pdf_file in os.listdir(data_dir):
+    if pdf_file.endswith(".pdf"):
+        with pdfplumber.open(os.path.join(data_dir, pdf_file)) as pdf:
+            print(f"{pdf_file}: {len(pdf.pages)} trang")

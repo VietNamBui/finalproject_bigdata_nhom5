@@ -1,0 +1,218 @@
+tổng quan vӄ dӳ liӊu lӟn bigdata
+ks nguyễn công hoan
+trước đây chúng ta mới chỉ biết đến dữ liệu có cấu trúc structure data ngày
+nay với sự kết hợp của dữ liệu và internet đã xuất hiện một dạng khác của dữ liệu big
+data dịch là dữ liệu lớn dữ liệu này có thể từ các nguồn như hồ sơ hành chính giao
+dịch điện tử dòng trạng thái status chia sẻ hình ảnh bình luận nhắn tin của chính
+chúng ta nói cách khác chúng là dữ liệu được sản sinh qua quá trình chia sẻ thông tin
+trực tuyến liên tục của người sử dụng để cung cấp cái nhìn tổng quan chúng tôi xin giới
+thiệu tóm tắt những nét chính về dữ liệu lớn cũng như những cơ hội và thách thức mà dữ
+liệu lớn mang lại
+1 khái niӌm đặc trưng của dӳ liӌu lӟn và sự khác biӌt vӟi dӳ liӌu truyӆn thống
+1 1 khái niệm về dữ liệu lớn
+theo wikipedia big data là một thuật ngữ chỉ bộ dữ liệu lớn hoặc phức tạp mà các
+phương pháp truyền thống không đӫ các ứng dөng để xử lủ dữ liệu này
+theo gartner dữ liệu lớn là những nguồn thông tin có đặc điểm chung khối lượng lớn
+tốc độ nhanh và dữ liệu định dạng dưới nhiều hình thức khác nhau do đó muốn khai thác
+được đòi hỏi phải có hình thức xử lủ mới để đưa ra quyết định khám phá và tối ưu hóa
+quy trình
+1 2 nguồn hình thành dữ liệu và phương pháp khai thác và quản lý dữ liệu lớn
+qua thống kê và tổng hợp nguồn dữ liệu lớn được hình thành chӫ yếu từ 6 nguồn
+1 dữ liệu hành chính phát sinh từ chương trình cӫa một tổ chức có thể là chính phӫ
+hay phi chính phӫ ví dө hồ sơ y tế điện tử ở bệnh viện hồ sơ bảo hiểm hồ sơ ngân
+hàng 2 dữ liệu từ hoạt động thương mại phát sinh từ các giao dịch giữa hai thực
+thể ví dө các giao dịch thẻ tín dөng giao dịch trên mạng bao gồm cả từ các thiết bị di
+động 3 dữ liệu từ các thiết bị cảm biến như thiết bị chөp hình ảnh vệ tinh cảm biến
+đường cảm biến khí hậu 4 dữ liệu từ các thiết bị theo dõi ví dө theo dõi dữ liệu từ
+điện thoại di động gps 5 dữ liệu từ các hành vi ví dө như tìm kiếm trực tuyến về
+một sản phẩm một dịch vө hay thông tin khác đọc các trang mạng trực tuyến 6 dữ
+liệu từ các thông tin về ủ kiến quan điểm cӫa các cá nhân tổ chức trên các phương tiện
+thông tin xã hội
+phương pháp khai thác và quản lủ dữ liệu lớn hiện nay được thiết kế phù hợp dựa
+theo các nguồn hình thành dữ liệu lớn mỗi nguồn dữ liệu lớn khác nhau sẽ có phương
+pháp khai thác và quản lủ dữ liệu lớn khác nhau tuy nhiên hiện nay phần lớn các tổ
+chức trên thế giới đều dùng hadoop ecosystem là giải pháp tối ưu để khai thác và quản lủ
+dữ liệu lớn
+1 3 đặc trưng 5v c a dữ liệu lớn
+dữ liệu lớn có 5 đặc trưng cơ bản như sau mô hình 5v
+1 khối lượng dữ liệu
+đây là đặc điểm tiêu biểu nhất cӫa dữ liệu lớn khối lượng dữ liệu rất lớn kích cỡ
+cӫa big data đang từng ngày tăng lên và tính đến năm thì nó có thể nằm trong
+khoảng vài chөc terabyte cho đến nhiều petabyte 1 petabyte terabyte chỉ cho
+một tập hợp dữ liệu dữ liệu truyền thống có thể lưu trữ trên các thiết bị đĩa mềm đĩa
+cứng nhưng với dữ liệu lớn chúng ta sẽ sử dөng công nghệ đám mây mới đáp ứng khả
+năng lưu trữ được dữ liệu lớn
+2 tốc độ velocity
+tốc độ có thể hiểu theo 2 khía cạnh a khối lượng dữ liệu gia tăng rất nhanh mỗi
+giây có tới 9 triệu các yêu cầu truy cập tìm kiếm trên web bán hàng cӫa amazon b
+xử lủ dữ liệu nhanh ở mức thời gian thực real time có nghĩa dữ liệu được xử lủ ngay
+tức thời ngay sau khi chúng phát sinh tính đến bằng mili giây các ứng dөng phổ biến
+trên lĩnh vực internet tài chính ngân hàng hàng không quân sự y tế sức khỏe như
+hiện nay phần lớn dữ liệu lớn được xử lủ real time công nghệ xử lủ dữ liệu lớn ngày nay
+đã cho phép chúng ta xử lủ tức thì trước khi chúng được lưu trữ vào cơ sở dữ liệu
+3 đa dạng variety
+đối với dữ liệu truyền thống chúng ta hay nói đến dữ liệu có cấu trúc thì ngày nay
+hơn dữ liệu được sinh ra là phi cấu trúc tài liệu blog hình ảnh vi deo bài hát dữ
+liệu từ thiết bị cảm biến vật lủ thiết bị chăm sóc sức khỏe big data cho phép liên kết
+và phân tích nhiều dạng dữ liệu khác nhau ví dө với các bình luận cӫa một nhóm người
+dùng nào đó trên facebook với thông tin video được chia sẻ từ youtube và twitter
+4 độ tin cậy chính xác veracity
+một trong những tính chất phức tạp nhất cӫa dữ liệu lớn là độ tin cậy chính xác cӫa
+dữ liệu với xu hướng phương tiện truyền thông xã hội social media và mạng xã hội
+social network ngày nay và sự gia tăng mạnh mẽ tính tương tác và chia sẻ cӫa người
+dùng mobile làm cho bức tranh xác định về độ tin cậy chính xác cӫa dữ liệu ngày một
+khó khăn hơn bài toán phân tích và loại bỏ dữ liệu thiếu chính xác và nhiễu đang là tính
+chất quan trọng cӫa bigdata
+5 giá trị value
+giá trị là đặc điểm quan trọng nhất cӫa dữ liệu lớn vì khi bắt đầu triển khai xây
+dựng dữ liệu lớn thì việc đầu tiên chúng ta cần phải làm đó là xác định được giá trị cӫa
+thông tin mang lại như thế nào khi đó chúng ta mới có quyết định có nên triển khai dữ
+liệu lớn hay không nếu chúng ta có dữ liệu lớn mà chỉ nhận được 1 lợi ích từ nó thì
+không nên đầu tư phát triển dữ liệu lớn kết quả dự báo chính xác thể hiện rõ nét nhất về
+giá trị cӫa dữ liệu lớn mang lại ví dө từ khối dữ liệu phát sinh trong quá trình khám
+chữa bệnh sẽ giúp dự báo về sức khỏe được chính xác hơn sẽ giảm được chi phí điều trị
+và các chi phí liên quan đến y tế
+1 4 sự khác biệt giữa dữ liệu lớn với dữ liệu truyền thống
+dữ liệu lớn khác với dữ liệu truyền thống ví dө kho dữ liệu data warehouse ở 4
+điểm cơ bản dữ liệu đa dạng hơn lưu trữ dữ liệu lớn hơn truy vấn nhanh hơn độ chính
+xác cao hơn
+1 dữ liệu đa dạng hơn khi khai thác dữ liệu truyền thống dữ liệu có cấu trúc
+chúng ta thường phải trả lời các câu hỏi dữ liệu lấy ra kiểu gì định dạng dữ liệu như thế
+nào đối với dữ liệu lớn không phải trả lời các câu hỏi trên hay nói khác khi khai thác
+phân tích dữ liệu lớn chúng ta không cần quan tâm đến kiểu dữ liệu và định dạng cӫa
+chúng điều quan tâm là giá trị mà dữ liệu mang lại có đáp ứng được cho công việc hiện
+tại và tương lai hay không
+2 lưu trữ dữ liệu lớn hơn lưu trữ dữ liệu truyền thống vô cùng phức tạp và luôn
+đặt ra câu hỏi lưu như thế nào dung lượng kho lưu trữ bao nhiêu là đӫ gắn kèm với câu
+hỏi đó là chi phí đầu tư tương ứng công nghệ lưu trữ dữ liệu lớn hiện nay đã phần nào
+có thể giải quyết được vấn đề trên nhờ những công nghệ lưu trữ đám mây phân phối lưu
+trữ dữ liệu phân tán và có thể kết hợp các dữ liệu phân tán lại với nhau một cách chính
+xác và xử lủ nhanh trong thời gian thực
+3 truy vấn dữ liệu nhanh hơn dữ liệu lớn được cập nhật liên tөc trong khi đó
+kho dữ liệu truyền thống thì lâu lâu mới được cập nhật và trong tình trạng không theo dõi
+thường xuyên gây ra tình trạng lỗi cấu trúc truy vấn dẫn đến không tìm kiếm được thông
+tin đáp ứng theo yêu cầu
+4 độ chính xác cao hơn dữ liệu lớn khi đưa vào sử dөng thường được kiểm định
+lại dữ liệu với những điều kiện chặt chẽ số lượng thông tin được kiểm tra thông thường
+rất lớn và đảm bảo về nguồn lấy dữ liệu không có sự tác động cӫa con người vào thay
+đổi số liệu thu thập
+2 bͱc tranh tổng thể ͱng dụng dữ liệu lớn
+dữ liệu lớn đã được ứng dөng trong nhiều lĩnh vực như hoạt động chính trị giao
+thông y tế thể thao tài chính thương mại thống kê dưới đây là một số ví dө về ứng
+dөng dữ liệu lớn
+2 1 ͱng dụng dữ liệu lớn trong hoạt động chính trị
+hình bên cho thấy tổng thống mỹ obama đã sử dөng
+dữ liệu dữ liệu lớn để phөc vө cho cuộc tranh cử tổng thống
+cӫa mình ông xây dựng một đội ngũ nhân viên chuyên đi
+thu thập thông tin và phân tích dữ liệu thu được trong dự án
+triển khai về dữ liệu lớn đội ngũ nhân viên này thu thập tất
+cả thông tin về người dân ở các khu vực sau đó phân tích và
+chỉ ra một số thông tin quan trọng về người dân mỹ như
+thích đọc sách gì thích mua loại thuốc gì thích sử dөng phương tiện gì thậm chí còn
+biết được cả thông tin về mẹ cӫa cử tri đó đã bỏ phiếu tín nhiệm ai ở lần bầu cử trước
+trên cơ sở những thông tin này tổng thống obama đã đưa ra kế hoạch vận động phù
+hợp giúp ông tái đắc cử tổng thống nước mỹ lần thứ 2
+ngoài ra một số ứng dөng khác trong lĩnh vực chính trị mà dữ liệu lớn được áp
+dөng như hệ thống chính phӫ điện tử phân tích quy định và việc tuân thӫ quy định
+phân tích giám sát theo dõi và phát hiện gian lận mối đe dọa an ninh mạng
+2 2 ͱng dụng dữ liệu lớn trong giao thông
+sử dөng số liệu cdr trong quá khứ để ước lượng các
+dòng giao thông trong thành phố vào các giờ cao điểm từ đó có
+những kế hoạch phân luồng giao thông chi tiết hợp lủ giúp giảm
+thiểu kẹt xe ngoài ra còn đưa ra thông tin cho người tham gia
+giao thông được biết nếu muốn đi từ nơi này đến nơi khác thì nên
+đi vào giờ nào để tránh kẹt xe hoặc đi đường nào là ngắn nhất v v ngoài ra dữ liệu lớn
+còn giúp phân tích định vị người dùng thiết bị di động ghi nhận chi tiết cuộc gọi trong
+thời gian thực và giảm thiểu tình trạng ùn tắc giao thông
+2 3 ͱng dụng dữ liệu lớn trong y tế
+trong y học các bác sĩ dựa vào số liệu trong các bệnh án
+để đưa ra dự đoán về nguy cơ mắc bệnh đồng thời cũng đưa ra
+được xu hướng lây lan cӫa bệnh ví dө ứng dөng google flu
+trend là một trong những ứng dөng thành công cӫa google ứng
+dөng này dựa trên từ khóa tìm kiếm ở một khu vực nào đó sau đó
+bộ máy phân tích cӫa google sẽ phân tích và đối chiếu kết quả tìm
+kiếm đó sau cùng là đưa ra dự báo về xu hướng dịch cúm tại khu
+vực đó qua đó cho biết tình hình cúm tại khu vực đó sẽ diễn ra như thế nào để đưa ra các
+giải pháp phòng tránh những kết quả mà google flu trend đưa ra hoàn toàn phù hợp
+với báo cáo cӫa tổ chức y tế thế giới who về tình hình bệnh cúm tại các khu vực đó
+2 4 ͱng dụng dữ liệu lớn trong thể thao
+phân tích mô hình hệ thống cấu trúc sơ đồ chiến thuật
+cӫa đội tuyển đức hình bên đã đưa ra những điểm bất hợp lủ
+trong cấu trúc cӫa đội tuyển đức từ đó giúp cho đội tuyển đức
+khắc phөc được điểm yếu và đã dành được world cup
+2 5 ͱng dụng dữ liệu lớn trong tài chính
+từ những dữ liệu chính xác kịp thời thu thập được thông qua các giao dịch cӫa
+khách hàng tiến hành phân tích xếp hạng và quản lủ các rӫi ro trong đầu tư tài chính tín
+2 6 ͱng dụng dữ liệu lớn trong thương mại
+trong thương mại dữ liệu lớn giúp cho chúng ta thực hiện được một số công việc
+sau phân khúc thị trường và khách hàng phân tích hành vi khách hàng tại cửa hàng tiếp
+thị trên nền tảng định vị phân tích tiếp thị chéo kênh tiếp thị đa kênh quản lủ các chiến
+dịch tiếp thị và khách hàng thân thiết so sánh giá phân tích và quản lủ chuỗi cung ứng
+phân tích hành vi thói quen người tiêu dùng
+2 7 ͱng dụng dữ liệu lớn trong thống kê
+nhận thấy những lợi ích to lớn và thách thức cӫa bigdata đối với thống kê chính
+thức ӫy ban thống kê liên hợp quốc cũng như các tổ chức thống kê khu vực và cơ quan
+thống kê quốc gia cӫa nhiều nước đã triển khai hàng loạt các hoạt động về bigdata như
+hàn quốc sử dөng ảnh vệ tinh để thống kê nông nghiệp và một số lĩnhvực khác australia
+sử dөng ảnh vệ tinh để thống kê diện tích đất nông nghiệp và năng suất italia sử dөng dữ
+liệu điện thoại di động để thống kê di cư bhutan dùng thiết bị di động để tính toán chỉ số
+giá tiêu dùng estonia dùng điện thoại di động định vị vệ tinh để thống kê du lịch
+eurostat sử dөng dữ liệu về sử dөng điện thoại di động để thống kê du lịch1
+3 nhӳng cơ hội và thách thͱc khi ͱng dụng big data trong thống kê chính thͱc
+3 1 cơ hội
+1 tiếp cận và nghiên cứu về dữ liệu lớn sẽ giúp cho chúng ta có thêm phương án
+giải quyết xử lủ và đối phó với những thách thức đối sản xuất số liệu thống kê chính thức
+trong hiện tại và tương lai những nghiên cứu thực nghiệm cần phải được tiến hành để
+khám phá những ứng dөng tiềm năng cӫa dữ liệu lớn trong số liệu thống kê chính thức
+và nghiên cứu thực nghiệm đó phải là một phần trong quy trình sản xuất số liệu thống kê
+2 nghiên cứu về dữ liệu lớn cần phải có cơ sở hạ tầng công nghệ thông tin hiện
+đại đáp ứng các yêu cầu xử lủ khối lượng lớn dữ liệu và nhanh đồng thời có thể tập hợp
+dữ liệu từ nhiều nguồn khác nhau thực hiện được điều này chúng ta có được đội ngũ
+nguồn nhân lực về quản lủ và khai thác big data vững vàng về chuyên môn và được trải
+qua kinh nghiệm thực tế
+3 tiếp cận và nghiên cứu về dữ liệu lớn sẽ giúp chúng ta có được những văn bản
+pháp lủ bổ sung có thể giúp cho cơ quan thống kê chính thức có điều kiện để thực hiện
+được khai thác dữ liệu thông qua hồ sơ hành chính ngoài ra dữ liệu cũng được bảo đảm
+và giữ bí mật nhờ những văn bản pháp lủ bổ sung này
+4 sử dөng dữ liệu lớn đem lại niềm tin cӫa cộng đồng với thống kê chính thức do
+quá trình trình sản xuất số liệu thống kê chính thức với dữ liệu lớn hoàn toàn không có sự
+tác động chӫ ủ cӫa con người
+3 2 thách thͱc
+1 tài chính
+nhiều đơn vị tổ chức không đo lường được vấn đề sẽ phát sinh trong quá trình triển
+khai thực hiện dự toán kinh phí chưa chính xác do vậy dự án không thực hiện được để
+triển khai được thành công yếu tố tài chính có ủ nghĩa rất quan trọng một số tập đoàn
+thương mại lớn có tiềm lực tài chính vững chắc đã xây dựng thuận lợi hệ thống dữ liệu
+big data như ibm website bán hàng thương mại điện tử amazon
+2 chính sách quy định luật pháp về truy cập và sử dụng dữ liệu
+việc sử dөng và khai thác dữ liệu lớn phө thuộc vào luật quy định cӫa mỗi quốc gia
+1 xem báo cáo thống kê chính thức với big data kinh nghiệm quốc tế và định hướng của thống kê việt nam
+ví dө ở canada người dùng có thể được tiếp cận dữ liệu từ cả hai tổ chức chính
+phӫ và phi chính phӫ nhưng ở những nước khác như ireland thì phải được sự cho phép
+từ các cơ quan chính phӫ điều này có thể dẫn đến những hạn chế để truy cập vào một số
+loại dữ liệu lớn
+3 trình độ khai thác và quản lý dữ liệu
+do luật pháp quy định sử dөng và khai thác ở mỗi quốc gia là khác nhau nên cách
+quản lủ là cũng khác nhau tuy nhiên một vấn đề liên quan đến quản lủ thông tin hiện nay
+nhân trong khi đó bộ phận này chưa được liên kết với những tổ chức cӫa chính phӫ một
+cách chặt chẽ dẫn đến việc quản lủ vẫn còn nhiều vướng mắc
+4 hạ tầng công nghệ thông tin
+cần phải cải thiện tốc độ dữ liệu truy cập vào các dữ liệu hành chính nghĩa là có thể
+sử dөng giao diện ứng dөng cӫa chương trình chuyên sâu tiêu chuẩn api để truy cập
+dữ liệu bằng cách này nó có thể kết nối các ứng dөng cho dữ liệu thu về và xử lủ dữ liệu
+trực tiếp với dữ liệu hành chính ngoài ra hệ thống khai thác dữ liệu lớn cũng cần phải
+được tính toán để có thể kết nối vào được kho cơ sở dữ liệu truyền thống đó cũng là một
+trong những thách thức lớn cần được giải quyết
+tóm lại
+trong bài nghiên cứu trên chúng tôi đã đưa ra được những thông tin cơ bản về big
+data những lợi ích mà big data mang lại cho chúng ta bên cạnh đó cũng chỉ ra những
+thách thức khi triển khai áp dөng khai thác big data
+điều quan trọng nhất trong báo cáo này đã đưa ra những ưu điểm cӫa big data đó là
+cung cấpthông tin để chung ta xử lủ được tình huống nhanh nhất chính xác nhất và giá trị
+cӫa big data mang lại luôn có tính định hướng đến tương lai giải đáp những câu hỏi tại
+sao việc ấy lại xảy ra sau chuyện đó thì điều gì sẽ sảy ra và chúng ta nên ứng phó như
+thế nào trong hoàn cảnh đó
+tài liệu tham khảo
+1 tài liệu cơ hội và thách thức với bigdata e cӫa liên hợp quốc
+2 báo cáo hội thảo về tương lai cӫa thống kê học london
+3 tài liệu về các khái niệm và đặc trưng cӫa big data
