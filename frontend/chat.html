@@ -1,1 +1,40 @@
 <!-- Chat page placeholder -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trò chuyện RAG</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Hệ thống Chat</h1>
+  <div id="chatbox"></div>
+  <input type="text" id="user_input" placeholder="Nhập câu hỏi..." />
+  <button onclick="send()">Gửi</button>
+  <br><br>
+  <a href="/">← Quay về Trang chủ</a>
+
+  <script>
+    async function send() {
+      const input = document.getElementById("user_input");
+      const question = input.value;
+      const res = await fetch("/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question })
+      });
+      const data = await res.json();
+
+      const chatbox = document.getElementById("chatbox");
+      chatbox.innerHTML = "";
+      data.history.forEach(item => {
+        chatbox.innerHTML += `<p><strong>Bạn:</strong> ${item.user}</p>`;
+        chatbox.innerHTML += `<p><strong>Bot:</strong> ${item.bot}</p><hr>`;
+      });
+
+      input.value = "";
+    }
+  </script>
+</body>
+</html>
+

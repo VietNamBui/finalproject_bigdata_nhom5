@@ -1,1 +1,21 @@
 /* CSS placeholder */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  #chatbox {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+    background-color: #f9f9f9;
+  }
+  input {
+    width: 70%;
+    padding: 10px;
+  }
+  button {
+    padding: 10px 15px;
+  }
+  
