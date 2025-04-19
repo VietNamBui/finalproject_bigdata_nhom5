@@ -1,18 +1,22 @@
-<!-- Chat page placeholder -->
-
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trò chuyện RAG</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
-  <h1>Hệ thống Chat</h1>
-  <div id="chatbox"></div>
-  <input type="text" id="user_input" placeholder="Nhập câu hỏi..." />
-  <button onclick="send()">Gửi</button>
-  <br><br>
-  <a href="/">← Quay về Trang chủ</a>
+  <div class="container">
+    <h1>Hệ thống Chat</h1>
+    <div id="chatbox"></div>
+    <div class="input-group">
+      <input type="text" id="user_input" placeholder="Nhập câu hỏi..." />
+      <button onclick="send()">Gửi</button>
+    </div>
+    <br><br>
+    <a href="/">← Quay về Trang chủ</a>
+  </div>
 
   <script>
     async function send() {
@@ -37,4 +41,3 @@
   </script>
 </body>
 </html>
-
