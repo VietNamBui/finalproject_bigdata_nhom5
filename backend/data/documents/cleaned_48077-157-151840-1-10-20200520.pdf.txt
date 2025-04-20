@@ -1,0 +1,546 @@
+thông tin và tư liệu 2
+big data và xu hướng ứng dụng trong hoạt động thông tin thư viện
+tóm tắt big data là một thuật ngữ được sử dụng để chỉ những bộ dữ liệu khổng lồ chủ yếu không
+có cấu trúc được thu thập từ nhiều nguồn khác nhau big data có nhiều tác động ứng dụng và được
+xem như một yếu tố quyết định đến việc phát triển mang lại lợi thế cạnh tranh cho tổ chức bài viết
+tổng quan lược sử các quan điểm về big data đồng thời nhấn mạnh vào các xu hướng ứng dụng
+trong hoạt động thông tin thư viện
+từ khóa big data dữ liệu lớn hoạt động thư viện
+big data is a term used to refer to huge mostly unstructured datasets collected from
+factor in the development bringing competitive advantages to the organization the overview paper
+activities
+big data library activities
+1 lược sử các quan điểm về big data
+hiện nay chưa có một định nghĩa chính
+xác cho thuật ngữ big data big được ghi
+controlled demand paging for out of core
+visualization của michael cox và david
+ellsworth được trình bày tại hội nghị ieee lần
+thứ 8 vào tháng năm ý tưởng đưa
+ra ban đầu là dung lượng thông tin đã tăng
+quá lớn tới mức các bộ nhớ máy tính dùng để
+xử lý không còn đủ số lượng cần khảo sát do
+vậy các kỹ sư cần cải tạo các công cụ để có
+thể phân tích được tất cả các thông tin
+tháng 8 năm steve bryson david
+kenwright michael cox david ellsworth và
+robert haimes đăng bài visually exploring
+gigabyte data sets in real time trên tạp chí
+communications of the acm đây là bài viết
+đầu tiên sử dụng thuật ngữ big data các
+tác giả nhận định những chiếc máy tính
+mạnh là lợi thế cho việc khảo sát nhiều lĩnh
+vực cũng có thể là bất lợi tính toán nhanh
+chóng tạo ra một lượng lớn dữ liệu nếu trước
+kia bộ dữ liệu megabyte đã từng được coi
+là lớn thì bây giờ chúng ta có thể tìm thấy
+những bộ dữ liệu của cá nhân vào khoảng
+tháng năm francis x diebold
+trình bày tại đại hội thế giới lần thứ viii của
+hiệp hội kinh tế lượng bài viết big data
+dynamic factor models for macroeconomic
+measurement and forecasting trong bài
+viết này tác giả khẳng định gần đây nhiều
+học xã hội vốn đang buộc phải đương đầu với
+khó khăn đã thu được lợi từ hiện tượng big
+data và đã gặt hái được nhiều thành công big
+data chỉ sự bùng nổ về số lượng và đôi khi
+chất lượng khả năng liên kết cũng như độ
+sẵn sàng của dữ liệu chủ yếu là kết quả của
+những tiến bộ gần đây và chưa từng có trong
+việc ghi lại dữ liệu và công nghệ lưu trữ 4
+tháng 2 năm doug laney nhà
+phân tích của tập đoàn meta công bố nghiên
+cứu 3d data managment controlling data
+velocity and variety laney cho
+rằng những thách thức và cơ hội nằm trong
+việc tăng trưởng dữ liệu có thể được mô tả
+bằng mô hình 3vs tăng về số lượng lưu trữ
+tăng về tốc độ xử lý velocity và
+tăng về chủng loại variety 3 một thập kỷ
+sau mô hình 3vs đã trở thành thuật ngữ
+được chấp nhận rộng rãi trong việc xác định
+dữ liệu lớn ba chiều nhiều công ty và tổ chức
+nghiên cứu trao đổi
+thông tin và tư liệu 2 thông tin và tư liệu 1
+trong lĩnh vực công nghệ thông tin tiếp tục sử
+dụng mô hình 3vs này để định nghĩa big
+tháng năm randal e bryant
+randy h katz và edward d lazowska
+công bố bài viết big data computing
+creating revolutionary breakthroughs in
+commerce science and society trong đó
+miêu tả cũng như công cụ tìm kiếm đã làm
+thay đổi cách chúng ta tiếp cận thông tin các
+hình thức khác của sử dụng big data có thể
+sẽ làm thay đổi cách hoạt động của các công
+viên y tế quốc phòng và tình báo sử dụng
+big data có lẽ là đổi mới lớn nhất trong công
+nghệ máy tính suốt một thập kỷ qua chúng
+tôi chỉ mới bắt đầu nhìn thấy tiềm năng của
+nó trong việc thu thập sắp xếp và xử lý dữ
+liệu của tất cả các tầng lớp xã hội một khoản
+đầu tư dù khiêm tốn của chính phủ liên bang
+sẽ thúc đẩy phát triển và mở rộng nó
+tháng 2 năm kenneth cukier đăng
+trên tờ the economist newspaper bài viết
+data data everywhere cukier viết thế
+giới chứa một số lượng thông tin số lớn đến
+mức không tưởng và càng ngày càng được
+nhân rộng với tốc độ nhanh hơn bao giờ hết
+hiệu quả đã được thể hiện ở khắp mọi nơi từ
+tính đã đặt ra một thuật ngữ mới cho hiện
+tượng này big data 8
+tháng 5 năm danah boyd và kate
+crawford đưa ra luận điểm của họ trong
+bài critical question for big data trên tờ
+information communications and society
+các tác giả định nghĩa big data như là một
+hiện tượng văn hóa công nghệ và học thuật
+dựa trên sự tương tác của 1 công nghệ tối
+đa hóa sức mạnh tính toán và độ chính xác
+thuật toán để thu thập phân tích liên kết và
+so sánh các tập dữ liệu lớn 2 phân tích tạo
+ra trên dữ liệu lớn để xác định mô hình cho
+tuyên bố kinh tế xã hội kỹ thuật và pháp lý 3
+thần thoại niềm tin phổ biến rằng dữ liệu lớn
+cung cấp một hình thức cao hơn của trí thông
+minh và kiến thức có thể tạo ra những hiểu
+biết mà trước đây không thể với hào quang
+của sự thật khách quan chính xác 2
+sau đó gartner công ty nghiên cứu và
+tư vấn công nghệ thông tin bổ sung thêm
+rằng big data ngoài 3 tính chất số lượng
+tốc độ xử lý và chủng loại thì còn phải cần
+đến các dạng xử lý mới để đưa ra quyết định
+khám phá sâu vào sự vật sự việc và tối ưu
+hóa các quy trình làm việc 5 cùng quan
+điểm đó tan jee toon cho rằng big data
+là khối lượng dữ liệu rất lớn được tạo ra từ
+mọi thứ xung quanh chúng ta từ các thiết bị
+kỹ thuật số như di động video hình ảnh tin
+nhắn tới các thiết bị cảm biến các máy móc
+được kết nối tới các trang web và mạng xã
+hội big data có đặc điểm là được sinh ra với
+khối lượng tốc độ velocity độ đa
+dạng variety và tính xác thực veracity rất
+năm gartner đưa ra khái niệm
+mới về big data bằng mô hình 5vs gồm
+khối lượng velocity tốc độ
+variety tính đa dạng veracity tính xác
+thực và value giá trị trong đó là
+khối lượng big data được tạo ra mỗi ngày
+công nghệ big data có thể lưu trữ và sử
+dụng những tập dữ liệu trong các hệ thống
+phân tán nơi mà dữ liệu chỉ được lưu trữ một
+phần tại các điểm khác nhau và được tập hợp
+bởi phần mềm velocity là tốc độ dữ liệu mới
+được tạo ra và tốc độ dữ liệu chuyển động
+công nghệ big data có thể phân tích dữ liệu
+ngay khi chúng được tạo ra mà không cần lưu
+giữ chúng trong các cơ sở dữ liệu variety là
+các kiểu khác nhau của dữ liệu công nghệ
+big data cho phép lưu trữ các loại dữ liệu
+có cấu trúc truyền thống được lưu trữ trong
+các bảng hoặc các cơ sở dữ liệu quan hệ và
+phi cấu trúc bao gồm các thông điệp trao
+đổi của mạng xã hội các hình ảnh dữ liệu
+cảm biến video tiếng nói veracity là tính
+hỗn độn hoặc tính tin cậy của dữ liệu công
+nghệ big data và phân tích dữ liệu cho phép
+kiểm soát những loại dữ liệu này value là giá
+trị của dữ liệu việc tiếp cận big data sẽ chỉ
+có ý nghĩa khi chúng ta chuyển được dữ liệu
+thành những thứ có giá trị đây là khái niệm
+đầy đủ về 5 tính chất của big data 5
+nghiên cứu trao đổi
+thông tin và tư liệu 2
+thông tin và tư liệu 1
+2 xu hướng ứng dụng big data trong hoạt
+động thông tin thư viện
+ngày nay một lượng lớn dữ liệu số có thể
+được tạo ra bởi những hệ thống liên kết với
+các mạng xã hội theo howe d chỉ
+lượng dữ liệu đang tăng lên với tốc độ tăng
+trưởng theo cấp số nhân 7 số lượng dữ
+liệu ngày càng tăng là xu thế phát triển trong
+nhiều lĩnh vực khác nhau và dữ liệu lớn big
+data được sử dụng rộng rãi trong các lĩnh
+vực tổ chức với nhiều mục đích khác nhau
+các công ty sử dụng big data để tìm hiểu
+hành vi tiêu dùng của khách hàng để đề xuất
+mua sắm cá nhân hóa cho từng đối tượng dựa
+trên thông tin thu thập được ebay facebook
+dụng big data để tìm ra những khám phá
+gene của con người việc sử dụng big data
+trong hoạt động thông tin thư viện đã bắt
+đầu được quan tâm nghiên cứu campbell
+d grant cowan scott r phân tích
+nghịch lý về quyền riêng tư khi xem xét lại giá
+trị cốt lõi của thư viện trong thời đại big data
+và dữ liệu liên kết 1 kim young seok
+phân tích big data trong các hoạt động và
+dịch vụ thư viện công cộng bằng phương pháp
+khuôn mặt chernoff 9 gerrard d mooney
+j và thompson d xem xét kiến trúc
+của các hệ thống bảo quản kỹ thuật số hỗ trợ
+phân tích dữ liệu các bộ tài nguyên được bảo
+tồn ở quy mô lớn và phân tích dự báo việc sử
+dụng big data của các nhà nghiên cứu trong
+thời gian tới 6 waqar ahmed và kanwal
+ameen tổng quan các khái niệm về
+big data và đo lường xu hướng liên quan của
+big data trong lĩnh vực quản lý thông tin và
+thư viện ye chunlei nghiên cứu
+về công nghệ chính của dịch vụ big data
+trong thư viện đại học zhan ming widén
+gunilla nghiên cứu vai trò của thư
+viện công cộng trong thời đại big data
+li shuqing jiao fusen zhang yong xu xia
+nghiên cứu các vấn đề và thay đổi của
+thư viện số trong thời đại big data từ góc độ
+dịch vụ người dùng tin các nghiên cứu
+bằng những cách tiếp cận khác nhau đã đề
+cập đến nhiều vấn đề của hoạt động thư viện
+trong thời đại big data bàn về xu hướng ứng
+dụng của big data trong hoạt động thư viện
+tuy chưa có một nghiên cứu đầy đủ và trực
+tiếp nào nhưng có thể tổng hợp thành các xu
+hướng chính như sau
+một là tổ chức lưu trữ bảo quản dữ liệu
+marydee ojala nhận định các thư viện
+đã phải đối mặt với big data từ trước khi thuật
+ngữ này xuất hiện và trở nên thông dụng như
+ngày nay bộ sưu tập các tài nguyên số được
+bảo tồn đang trở thành nguồn big data trong
+các thư viện khối lượng và tính đa dạng dữ
+liệu đang tăng lên nhanh chóng đòi hỏi các
+thư viện phải có phương pháp tổ chức lưu trữ
+bảo quản dữ liệu hợp lý nguồn dữ liệu
+thư viện bao gồm nguồn dữ liệu mô tả tài liệu
+thư viện nguồn tài nguyên số hóa tài liệu thư
+viện nguồn tài liệu số thư viện bổ sung qua
+việc mua hay sử dụng chung nguồn dữ liệu
+khảo sát thư viện dữ liệu định tính dữ liệu
+tương tác xã hội trước đây các thư viện
+đều lưu trữ dữ liệu ngoại tuyến trên các cuộn
+băng đặt trong các cơ sở lưu trữ trước tác
+động của công nghệ thông tin và cuộc cách
+mạng công nghiệp lần thứ tư các thư viện
+đã xem xét lại cách thức lưu trữ truyền thống
+và triển khai một giải pháp lưu trữ tiết kiệm
+chi phí hiệu quả dữ liệu được lưu trữ theo
+hai cách cả trên các thiết bị ngoại tuyến thẻ
+nhớ sd ổ cứng ngoài ổ đĩa flash và lưu trữ
+trực tuyến trên đám mây với phương thức
+kết hợp sử dụng băng từ để bảo quản lưu trữ
+sử dụng ổ đĩa cho các thông tin thường xuyên
+được yêu cầu và sử dụng lưu trữ đám mây
+cho các big data các thư viện hướng đến
+việc xác định khả năng truy cập tài nguyên
+thư viện bao gồm cả tài nguyên vật chất và
+dữ liệu xác định nhu cầu của người dùng
+tin và lập kế hoạch vòng đời cho tài nguyên
+thư viện trong thời gian tới khi các yêu cầu
+mới thúc đẩy việc sử dụng big data các thư
+viện hướng tới việc thu nhận tổ chức lưu trữ
+dữ liệu lưu trữ vật lý trong các máy chủ hoặc
+trong các cơ sở dữ liệu bảo tồn dữ liệu và
+phổ biến dữ liệu làm cho dữ liệu có sẵn trong
+thư viện trở nên dễ dàng tiếp cận hơn thông
+qua các sản phẩm trực quan các thư viện
+tiến tới xây dựng tạo lập hệ thống bảo quản
+nghiên cứu trao đổi
+thông tin và tư liệu 2
+kỹ thuật số bảo tồn cả tài nguyên số và siêu
+dữ liệu mô tả có thể phát triển trong nhiều
+năm tới để đáp ứng với các yêu cầu mới
+hai là cung cấp sản phẩm dịch vụ thư
+viện mang tính cá nhân hóa tùy chỉnh
+theo người dùng tin
+hiện nay các thư viện đang có xu
+hướng cung cấp nhiều tài nguyên và dịch
+vụ trực tuyến nhiều thư viện đang sử dụng
+các phương tiện truyền thông xã hội như
+facebook instagram để quảng bá các sản
+phẩm và dịch vụ thư viện các phương tiện
+truyền thông xã hội này cho phép các thư
+viện thu thập và sở hữu dữ liệu người dùng
+thư viện cùng với các dữ liệu khảo sát thư
+viện dữ liệu định tính thông qua phỏng vấn
+bảng trò chuyện dữ liệu tương tác xã hội
+từ các trang truyền thông xã hội các thư
+viện mở rộng bộ sưu tập dữ liệu thư viện và
+dựa vào các công cụ và phương pháp đánh
+giá để đánh giá nhu cầu tin của người dùng
+thư viện từ đó thư viện cung cấp các sản
+phẩm và dịch vụ thư viện phù hợp với nhu
+cầu của người dùng tuy nhiên trong thời
+gian tới sự gia tăng của big data làm cho
+một số tác vụ thu thập dữ liệu dễ dàng và
+nhanh hơn cho phép các thư viện vượt ra
+ngoài công việc đơn giản là đếm và tổng hợp
+các biện pháp thống kê và bắt đầu tham gia
+vào phân tích dữ liệu phức tạp như phân tích
+học tập và phân tích hiệu suất nghiên cứu
+trong kỷ nguyên big data không chỉ
+tài nguyên dữ liệu của thư viện số hiện đại
+có đặc điểm của big data mà cả dịch vụ thư
+viện hiện tại cũng cần sử dụng phương pháp
+big data để đổi mới big data có thể
+làm thay đổi mô hình cung cấp dịch vụ thư
+viện trong tương lai và vai trò của thư viện
+cũng sẽ thay đổi cho phù hợp các nhà
+nghiên cứu cho rằng việc ứng dụng big data
+có thể tác động đến hoạt động thông tin thư
+viện thông qua việc cung cấp các dịch vụ thư
+viện chuyển đổi phương thức cung cấp dịch
+vụ ứng dụng công nghệ thông tin hiện nay
+sang phương thức gắn liền tự động hóa dịch
+vụ và tích hợp các hệ thống xử lý các hỗ trợ
+công nghệ đối với việc kết nối trực tiếp và
+việc sử dụng big data sẽ tạo ra các lợi thế
+cạnh tranh để thư viện thu hút người dùng tin
+theo li shuqing jiao fusen zhang yong
+xu xia các vấn đề và tiềm năng của các thư
+viện số trong thời đại big data liên quan đến
+dữ liệu công nghệ dịch vụ và người dùng
+tin sử dụng big data hiện có và xem xét các
+đặc điểm về nhu cầu của người dùng tin hiện
+tại theo quan điểm của người dùng tin thư
+viện có thể đưa ra các ý tưởng phương pháp
+hiệu quả hơn để cải thiện các dịch vụ hiện
+có trong các thư viện số đồng thời nhu
+cầu cá nhân hóa của người dùng tin trong
+thời đại big data tạo nên yếu tố thúc đẩy sự
+phát triển của thư viện số từ dịch vụ chia sẻ
+tài nguyên sang dịch vụ hướng đến người
+dùng tin kim young seok cho rằng bằng
+cách sử dụng các phân tích trong thời gian
+thực các thư viện có thể thiết kế các dịch
+vụ được cá nhân hóa cho từng người dùng
+tin big data cung cấp thông tin chuyên sâu
+về hành vi và thông tin cá nhân của người
+dùng tin từ đó tạo ra trải nghiệm cá nhân
+hóa 9 ví dụ người dùng tin tìm kiếm trên
+trang opac của thư viện thì dữ liệu về những
+gì người dùng tin gõ ở mục tìm kiếm tần suất
+tìm kiếm số lần tham khảo danh mục tài liệu
+số lần xem mô tả tài liệu được thu thập và
+phân tích để tối ưu trải nghiệm tạo cơ hội lớn
+để thu hút người dùng tin thông qua cá nhân
+hóa đặc biệt với các công cụ phân tích dự
+báo của big data thư viện sẽ nắm được thị
+hiếu nhu cầu chính xác để cung cấp các sản
+phẩm dịch vụ phù hợp với người dùng tin
+trong thời gian thực
+ba là ứng dụng dịch vụ phân tích dự báo
+giống như hầu hết các ngành khác phân
+tích dự báo sẽ là một sự thay đổi lớn quan
+trọng trong các cơ quan thông tin thư viện
+phân tích sử dụng big data làm nền tảng cho
+sự phát triển của thư viện sẽ giúp thư viện
+hoạt động hiệu quả hơn đồng thời làm thay
+đổi căn bản mối quan hệ giữa thư viện và
+người dùng tin theo cách truyền thống mối
+quan hệ giữa thư viện và người dùng thư viện
+khá đơn giản người dùng thư viện nộp tiền
+làm thẻ thư viện và đổi lại họ được phục vụ
+trong các dịch vụ khác nhau của thư viện tuy
+nhiên mối quan hệ này đang dần thay đổi
+nghiên cứu trao đổi
+thông tin và tư liệu 2
+và người dùng thư viện không chỉ đơn giản là
+người sử dụng dịch vụ mà đã trở thành một
+đối tác trong việc cung cấp dịch vụ của thư
+viện người dùng thư viện cung cấp dữ liệu
+hành vi người dùng thông qua các dữ liệu cá
+nhân như lịch sử sử dụng tài liệu thư viện lịch
+sử tìm kiếm cách thức thói quen tìm kiếm
+các công cụ big data phân tích dữ liệu đưa
+ra thông tin chi tiết xác định khuynh hướng
+nhu cầu sử dụng thư viện nhu cầu tài liệu
+trong hiện tại và dự đoán các hoạt động của
+người dùng thư viện trong tương lai các công
+cụ remarketing trên nền tảng website thư
+viện hay mạng xã hội thư viện sẽ hỗ trợ các
+thư viện marketing trực tiếp đến người dùng
+tin các tài liệu dựa trên sở thích và dự báo nhu
+cầu simovic aleksandar nhận định
+các công cụ big data kết hợp với các thuật
+giá trị tiềm năng của người dùng tin cá nhân
+và mô hình hoạt động thư viện trong tương
+lai giúp dự báo tốt hơn các vấn đề phát sinh
+trong quản lý các sản phẩm và dịch vụ thư
+viện để tăng cường khả năng cung cấp thông
+tin tốt nhất cho người dùng tin về phía
+thư viện việc sử dụng tài nguyên big data
+hiện có và xem xét các đặc điểm về nhu cầu
+của người dùng tin hiện tại theo quan điểm
+của người dùng tin có thể đưa ra các ý tưởng
+và phương pháp hiệu quả hơn để cải thiện
+các dịch vụ hiện có trong thư viện kỹ thuật số
+đồng thời căn cứ vào các kết quả phân tích
+dự báo thư viện có thể xác định thời gian
+phương thức để quảng cáo cho các sản phẩm
+và dịch vụ thư viện đến người dùng thư viện
+về phía người dùng thư viện dựa vào các
+kết quả dự báo về hành vi tìm kiếm tra cứu
+sử dụng thư viện các hệ thống khuyến nghị
+recommendation engine sẽ gửi đến người
+dùng tin các tài liệu có thể họ quan tâm
+bốn là mở rộng dịch vụ chăm sóc
+người dùng tin
+dịch vụ chăm sóc người dùng tin có vai
+trò quan trọng trong sự thành công của các
+thư viện đặc biệt trong môi trường thư viện
+điện tử thư viện số các thư viện đang cố
+gắng để hiểu được người dùng thư viện giúp
+họ dễ dàng liên hệ với thư viện để đáp ứng
+các thắc mắc nhu cầu của mình big data
+hỗ trợ các thư viện trong việc hình thành một
+hệ thống chăm sóc người dùng thư viện linh
+hoạt tạo ra giá trị từ quá trình xây dựng mối
+quan hệ thân thiết với người dùng thư viện
+cùng với big data hệ thống trả lời tự động
+như chatbot không cần sự trợ giúp của
+con người phát triển tương ứng giúp tăng
+hiệu quả phân tích dữ liệu big data hiện
+nay nhiều thư viện sử dụng chatbot để giao
+tiếp trao đổi với người dùng thư viện tiếp
+nhận các ý kiến cụ thể của người dùng về
+sản phẩm và dịch vụ của thư viện cũng như
+các nhu cầu của người dùng khi người dùng
+truy cập vào website hay fanpage của thư
+viện họ có rất nhiều thắc mắc và muốn được
+giải đáp chatbot sẽ đưa ra các gợi ý hỗ trợ
+từng bước một cung cấp thông tin về các
+sản phẩm dịch vụ của thư viện cho người
+dùng chatbot được thiết kế và phát triển để
+vừa là nền tảng trò chuyện giữa chatbot với
+người dùng vừa cung cấp các tính năng thu
+thập dữ liệu người dùng thư viện từ các đoạn
+đối thoại qua những dữ liệu người dùng thu
+thập được công cụ phân tích dữ liệu big data
+tiến hành phân tích xác định những nhu cầu
+mong muốn của người dùng thư viện và từ đó
+thư viện có thể đưa ra các phản hồi thích hợp
+và xây dựng mối quan hệ lâu dài với người
+dùng thư viện bên cạnh đó chatbot nhắc
+nhở người dùng thư viện về việc sử dụng thư
+viện như thời hạn trả tài liệu thời hạn đổi thẻ
+thư viện hay gợi ý nhiều dịch vụ thư viện khác
+mà người dùng có thể cần đến trong quá trình
+sử dụng đặc biệt chatbot giúp thư viện
+chủ động hỗ trợ 7 tăng trải nghiệm tối
+đa cho người dùng thư viện mọi lúc chatbot
+lưu lại lịch sử đối thoại thông tin người dùng
+làm cơ sở cho các thư viện sử dụng phân tích
+big data có thể phân tích được chính xác
+các khúc mắc của người dùng thư viện và
+cả những sản phẩm hay dịch vụ còn thiếu
+trong chính thư viện chatbot hỗ trợ các thư
+viện khai thác big data phục vụ người dùng
+trong tương lai số thư viện sử dụng chatbot
+để chủ động chăm sóc người dùng tin được
+dự báo sẽ tăng lên nhanh chóng bởi những
+tính năng và lợi ích mà chatbot mang lại
+cùng với đó thông qua dữ liệu người dùng
+nghiên cứu trao đổi
+thông tin và tư liệu 2
+các thư viện có thể phân tích dự đoán các
+vấn đề có thể xảy ra trong quá trình cung cấp
+các sản phẩm dịch vụ thông qua phân tích
+cảm nhận của người dùng thư viện và thực
+hiện các giải pháp kịp thời
+có thể thấy big data giúp tối ưu hóa hoạt
+động thư viện bằng việc thu thập phân tích
+thông tin tăng trải nghiệm của người dùng
+tin bằng cách cá nhân hóa thư viện số cùng
+với đó big data có thể giúp các thư viện tiến
+hành phân tích dự báo tìm ra các đặc điểm
+chung dự báo thị hiếu đọc tình trạng sử dụng
+thư viện của người dùng tin bằng việc kết hợp
+các cơ sở dữ liệu không chỉ vậy big data tạo
+dịch vụ mới dựa vào trải nghiệm của người
+dùng tin trong quá trình sử dụng thư viện
+tài liệu tham khảo
+1 campbell d grant cowan scott r the
+paradox of privacy revisiting a core library value in
+an age of big data and linked data library trends
+vol no 3 p
+danah
+crawford
+critical question for big data information
+communications and society
+3 doug laney 3d data managment
+controlling data velocity and variety
+4 francis x diebold big data dynamic
+factor models for macroeconomic measurement
+and forecasting discussion of reichlin and
+watson paper in economics and econometrics
+eighth world congress of the econometric society
+5 gartner survey analysis big data adoption
+in shows substance behind the hype
+6 gerrard d mooney j thompson d
+digital preservation at big data scale proposing a
+step change in preservation system architectures
+library hi tech
+truy cập ngày
+7 howe d the future of biocuration
+nature p
+8 kenneth cukier data data everywhere a
+special report on managing information economist
+newspaper
+9 kim young seok big data analysis of
+public library operations and services by using the
+chernoff face method journal of documentation
+vol no 3 p
+li shuqing jiao fúen zhang yong xu xia
+problems and changes in digital libraries
+in the age of big data from the perspective of user
+services journal of academic librarianship vol
+controlled demand paging for out of core
+visualization report nas nasa ames
+research center
+marydee ojala big data and ai
+technology transparency and trust
+truy cập ngày
+randal e bryant randy h katz và edward d
+lazowska big data computing creating
+revolutionary
+breakthroughs
+commerce
+science and society computing community
+consortium truy
+cập ngày
+simovic aleksandar a big data smart
+library recommender system for an educational
+institution library hi tech bradford vol iss
+3 tr steve bryson david kenwright michael
+cox david ellsworth robert haimes
+visually exploring gigabyte data sets in real
+communications of the acm vol no 8 tr
+tan jee toon dữ liệu lớn nhân
+tố thay đổi cuộc chơi của doanh nghiệp
+lon nhan to thay cuoc choi cua doanh
+nghiep htm truy cập ngày
+waqar ahmed kanwal ameen defining
+big data and measuring its associated trends in
+the field of information and library management
+library hi tech news p
+ye chunlei research on the key
+technology of big data service in library
+the institude of electrical and electronics engineers
+inc conference proceedings piscataway
+yu jen chien library data big data or
+better data challenges from the field asist
+meeting proceeding of asist annual meeting
+vol no 1
+zhan ming widén gunilla public
+libraries roles in big data the electronic library
+vol no 1 p
+ngày tòa soạn nhận được bài
+ngày phản biện đánh giá ngày chấp
+nhận đăng
+nghiên cứu trao đổi

@@ -1,0 +1,382 @@
+what is big data
+enter
+table of contents
+defntion of big data
+the history of big data
+big data use cases
+how big data works
+big data best practices
+put big data to work
+defnition of
+big data
+what exactly is big data
+to put it simply big data is larger more
+complex data sets especially from new data
+sources these data sets are so voluminous that
+traditional data processing software just can t
+data can be used to address business problems
+you wouldn t have been able to tackle before
+to really understand big data it s helpful to have
+some historical background here s gartner s
+defnition circa which is still the go to
+defnition
+big data is data that contains greater variety
+higher velocity this is known as the three vs
+the three vs of big data
+the amount of data matters with
+of low density unstructured data this can be
+data of unknown value such as twitter data
+feeds clickstreams on a webpage or a mobile
+organizations this might be tens of
+terabytes of data for others it may be
+hundreds of petabytes
+velocity velocity is the fast rate at which data
+is received and perhaps acted on normally
+the highest velocity of data streams directly into
+memory versus being written to disk some
+internet enabled smart products operate in real
+time or near real time and will require
+real time evaluation and action
+variety in today s big data world data
+comes in new unstructured data types
+unstructured and semi structured data types
+such as text audio and video require addition
+preprocessing to derive meaning and
+velocity
+variety
+big data
+the value and truth of
+big data
+value and veracity data has intrinsic value but
+it s of no use until that value is discovered
+equally important how truthful is your data and
+how much can you rely on it
+today big data has become capital think of
+some of the world s biggest tech companies a
+large part of the value they offer comes from
+their data which they re constantly analyzing to
+produce more effciency and develop
+new products
+recent technological breakthroughs have
+exponentially reduced the cost of data storage
+and compute making it easier and less expensive
+to store more data than ever before with an
+increased of big data now cheaper and
+more accessible you can make more accurate
+and precise business decisions
+finding value in big data isn t only about
+analyzing it which is a whole other beneft
+it s an entire discovery process that requires
+insightful analysts business users and
+executives who ask the right questions recognize
+patterns make informed assumptions and
+predict behavior
+but how did we get here
+the history
+of big data
+around people began to realize just how
+much data users generated through facebook
+youtube and other online services hadoop an
+open source framework created specifcally to
+store and analyze big data sets was developed
+that same year nosql also began to gain
+popularity during this time
+the development of open source frameworks
+such as hadoop and more recently spark was
+essential for the growth of big data because they
+make big data easier to work with and cheaper to
+store in the years since then the of big
+data has skyrocketed users are still generating
+huge amounts of data but it s not just humans
+with the advent of internet of things iot more
+objects and devices are connected to the internet
+gathering data on customer usage patterns and
+product performance the emergence of machine
+learning has produced still more data
+while big data has come far its popularity is only
+just beginning cloud computing has expanded
+big data possibilities even further
+the cloud offers a truly elastic scalability where
+developers can just spin up ad hoc clusters to
+test around a subset of data it s an exciting time
+benefits of big data and
+data analytics
+the value of big data comes is twofold
+1 big data makes it possible for you to gain
+more complete answers because you have
+more information
+2 more complete answers means more
+confdence in the data which means
+tackling problems
+big data
+use cases
+this new knowledge enables you to handle use
+cases that you haven t been able to fully delve
+into before here are just a few more use cases
+are on our solutions page
+product development
+companies like netfix and procter gamble
+use big data to anticipate customer demand
+by classifying key attributes of past and current
+products or services and then modeling the
+relationship between those attributes and the
+commercial success of the offerings they build
+predictive models for new products and services
+in addition p g uses data and analytics from
+focus groups social media test markets and
+early store rollouts to plan produce and launch
+new products
+predictive maintenance
+factors that can predict mechanical failures may
+be deeply buried in structured data such as the
+equipment year make and model as well as
+in unstructured data that covers millions of log
+entries senor data error messages and engine
+temperature by analyzing these indications of
+organizations can deploy maintenance more cost
+effectively and maximize parts and
+equipment uptime
+customer experience
+the race for customers is on a clearer view of
+customer experience is more possible now than
+ever before big data enables you to gather data
+from social media web visits call logs and
+other data sources to improve the interaction
+experience and maximize the value delivered
+start delivering personalized offers reduce
+fraud and compliance
+when it comes to security it s not just a few
+rogue hackers you re up against entire expert
+teams security landscapes and compliance
+requirements are constantly evolving big
+data helps you identify patterns in data that
+information to make regulatory reporting
+much faster
+machine learning
+machine learning is the hottest of hot topics right
+now and data specifcally big data is one of
+the reasons why it s only recently that we ve
+been able to teach machines instead of program
+them and the availability of big data to train
+operational efficiency
+operational effciency may not always make the
+news but it s an area in which big data is having
+the most impact with big data you can analyze
+and assess production customer feedback and
+returns and other factors to reduce outages and
+anticipate future demands big data can also be
+used to improve decision making in line with
+current market demand
+drive innovation
+big data can help you innovate by studying
+interdependencies between humans institutions
+entities and process and then determining new
+ways to use those insights use data insights to
+improve decisions about fnancial and planning
+considerations examine trends and what
+customers want to deliver new products and
+services implement dynamic pricing there are
+endless possibilities
+big data challenges
+while big data holds a lot of promise it is not
+without its challenges
+first big data is big although new
+technologies have been developed to store data
+two years organizations still struggle to keep
+pace with their data and fnd ways to effectively
+store it
+but it s not enough to just store the data data
+must be used to be valuable and that depends
+on curation clean data or data that s relevant
+to the client and organized in a way that enables
+meaningful analysis requires a lot of work
+data scientists spend to percent of their
+time curating and preparing data before it can
+actually be used
+finally big data technology is changing at a fast
+pace a few years ago apache hadoop was the
+popular technology used to handle big data that
+is until apache spark was introduced in
+today a combination of the two frameworks
+big data technology is an ongoing challenge
+how big
+data works
+oracle cloud for big data analytics
+public
+streaming
+enterprise
+providers
+data services
+business analytics
+consumers
+integrate
+analyze
+manage
+adaptive
+intelligence
+big data gives you new insights that open up
+started involves three key actions
+integrate
+big data brings together data from many
+data integration mechanisms such as etl
+extract transform and load generally aren t
+up to the task it requires new strategies and
+technologies to analyze big data sets at terabyte
+or even petabyte scale at the same time big
+data has the same requirements for quality
+governance and confdence as traditional data
+sources during integration you need to bring in
+the data process it and make sure it s formatted
+and available in a form that your business
+analysts can get started with
+manage
+big data requires storage your storage solution
+can be in the cloud on premises or both
+you can store your data in any form you want
+and bring your desired processing requirements
+and necessary process engines to those data sets
+on an on demand basis many people choose
+their storage solution according to where their
+data is currently residing the cloud is gradually
+current compute requirements and enables you
+to spin up resources as needed
+analyze
+your investment in big data pays off when you
+analyze and act on your data get new clarity with
+a visual analysis of your varied data sets explore
+the data further to make new discoveries share
+your fndings with others build data models with
+machine learning and artifcial intelligence put
+your data to work
+to help you on your big data journey we ve put
+together some key best practices for you to keep
+in mind here are our guidelines for building a
+successful big data foundation
+big data
+best practices
+1 align big data with
+specific business goals
+more extensive data sets enable you to make
+new discoveries to that end it is important to
+base new investments in skills organization
+or infrastructure with a strong business
+driven context to guarantee ongoing project
+investments and funding to determine if
+you are on the right track ask how big data
+priorities examples include understanding how
+to flter web logs to understand ecommerce
+behavior deriving sentiment from social
+understanding statistical correlation methods
+and their relevance for customer product
+manufacturing and engineering data
+2 ease skills shortage
+with standards and
+governance
+one of the biggest obstacles to big data is a skills
+shortage you can mitigate this risk by ensuring
+that big data technologies considerations
+and decisions are added to your it
+governance program
+to manage costs and leverage resources
+organizations implementing big data
+solutions and strategies should assess their
+skill requirements early and often and should
+proactively identify any potential skill gaps these
+can be addressed by training cross training
+existing resources hiring new resources and
+leveraging consulting frms
+3 optimize knowledge
+transfer with a center
+of excellence
+knowledge control oversight and manage
+project communications whether big data is a
+new or an expanding investment the soft and
+hard costs can be shared across the enterprise
+big data capabilities and overall information
+architecture maturity in a more structured and
+systematic way
+4 top payoff is aligning
+unstructured with
+structured data
+it is certainly valuable to analyze big data on its
+own but you can bring even greater business
+insights by connecting and integrating low
+density big data with the structured data you are
+already using today
+whether you are capturing customer product
+equipment or environmental big data the goal
+is to add more relevant data points to your
+core master and analytical summaries leading
+to better conclusions for example there is
+a difference in distinguishing all customer
+sentiment from that of only your best customers
+which is why many see big data as an integral
+extension of their existing business intelligence
+capabilities data warehousing platform and
+information architecture
+keep in mind that the big data analytical
+processes and models can be both human and
+machine based big data analytical capabilities
+include statistics spatial analysis semantics
+interactive discovery and visualization using
+analytical models you can correlate different
+types and sources of data to make associations
+and meaningful discoveries
+5 plan your discovery lab
+for performance
+discovering meaning in your data is not always
+straightforward sometimes we don t even
+know what we re looking for that s expected
+of direction or lack of clear requirement
+at the same time it s important for analysts and
+data scientists to work closely with the business
+to understand key business knowledge gaps and
+requirements to accommodate the interactive
+exploration of data and the experimentation of
+statistical algorithms you need high performance
+work areas be sure that sandbox environments
+have the power they need and are
+properly governed
+6 align with the cloud
+operating model
+big data processes and users require access
+to broad array of resources for both iterative
+experimentation and running production
+jobs a big data solution includes all data
+realms including transactions master data
+reference data and summarized data analytical
+sandboxes should be created on demand
+resource management is critical to ensure
+control of the entire data fow including pre
+and post processing integration in database
+summarization and analytical modeling a well
+planned private and public cloud provisioning
+and security strategy plays an integral role in
+put big data
+to work
+clearly big data has tremendous potential
+putting a big data initiative to work at your
+organization can help you better understand your
+customers make more accurate decisions and
+learn more
+see how oracle can help your big data journey
+start your free trial today
+contact us url
+sales html
+free trial url
+copyright oracle and or its affiliates all rights reserved this document is provided for information purposes only and the contents hereof are subject
+to change without notice this document is not warranted to be error free nor subject to any other warranties or conditions whether expressed orally or
+worldwide headquarters
+implied in law including implied warranties and conditions of merchantability or fitness for a particular purpose we specifically disclaim any liability with
+oracle parkway
+redwood shores
+respect to this document and no contractual obligations are formed either directly or indirectly by this document this document may not be reproduced or
+transmitted in any form or by any means electronic or mechanical for any purpose without our prior written permission
+oracle and java are registered trademarks of oracle and or its affiliates other names may be trademarks of their respective owners
+intel and intel xeon are trademarks or registered trademarks of intel corporation all sparc trademarks are used under license and are trademarks or
+registered trademarks of sparc international inc amd opteron the amd logo and the amd opteron logo are trademarks or registered trademarks of
+worldwide inquiries
+advanced micro devices unix is a registered trademark of the open group
+phone 1
+1 oracle1
+connect with us
