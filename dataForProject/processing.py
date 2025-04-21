@@ -8,10 +8,10 @@ import unicodedata
 import fitz  # PyMuPDF
 
 # Create output directory
-os.makedirs("data/output_clean", exist_ok=True)
+os.makedirs("dataForProject/data/output_clean", exist_ok=True)
 
 # Data directory
-data_dir = "data/bigdata/"
+data_dir = "dataForProject/data/bigdata/"
 all_text = []
 
 def extract_text(pdf_path):
@@ -133,61 +133,7 @@ except Exception as e:
     print(f"Lỗi tải punkt_tab: {e}")
     exit(1)
 
-def chunk_by_tokens(text, max_tokens=300, min_tokens=100):
-    if not text.strip():
-        return []
-    try:
-        tokens = word_tokenize(text)
-    except LookupError:
-        print("Lỗi: punkt_tab không tải được. Thử lại với: nltk.download('punkt_tab')")
-        return []
-    chunks = []
-    current_chunk = []
-    current_count = 0
-    for token in tokens:
-        current_chunk.append(token)
-        current_count += 1
-        if current_count >= max_tokens:
-            chunk_text = ' '.join(current_chunk)
-            if len(word_tokenize(chunk_text)) >= min_tokens:
-                chunks.append(chunk_text)
-            current_chunk = []
-            current_count = 0
-    if current_chunk and len(word_tokenize(' '.join(current_chunk))) >= min_tokens:
-        chunks.append(' '.join(current_chunk))
-    return chunks
 
-# Chunk texts
-chunk_data = []
-for pdf_file, cleaned_text in zip([f for f in os.listdir(data_dir) if f.endswith(".pdf")], cleaned_texts):
-    chunks = chunk_by_tokens(cleaned_text)
-    for i, chunk in enumerate(chunks):
-        chunk_data.append({
-            "chunk_id": f"{pdf_file}_{i}",
-            "source": pdf_file,
-            "text": chunk,
-            "token_count": len(word_tokenize(chunk))
-        })
-
-# Save chunks to CSV
-chunk_df = pd.DataFrame(chunk_data)
-chunk_df.to_csv("data/output_clean/chunks.csv", index=False)
-
-# Check chunks
-print(f"Số chunk: {len(chunk_data)}")
-for chunk in chunk_data[:3]:
-    print(f"Chunk {chunk['chunk_id']}: {chunk['token_count']} tokens, Text: {chunk['text'][:100]}...")
-
-# Check chunk quality
-def check_chunk_quality(chunks):
-    for chunk in chunks:
-        tokens = chunk["token_count"]
-        if tokens < 100 or tokens > 300:
-            print(f"Warning: Chunk {chunk['chunk_id']} có {tokens} tokens")
-
-check_chunk_quality(chunk_data)
-
-# Check cleaned text quality
 def check_cleaned_text(cleaned_text, filename):
     issues = []
     if 'https' in cleaned_text or 'www' in cleaned_text:

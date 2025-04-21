@@ -2,7 +2,7 @@
 
 import os
 
-def load_documents(path: str = "backend/data/documents") -> list[str]:
+def load_documents(path: str = "backend/data/documents_cleaned") -> list[str]:
     docs = []
     for filename in os.listdir(path):
         full_path = os.path.join(path, filename)

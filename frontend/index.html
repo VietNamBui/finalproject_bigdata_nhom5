@@ -1,18 +1,177 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang chủ RAG</title>
-  <link rel="stylesheet" href="/static/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trang chủ - Hệ thống RAG</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #e0f7fa);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #1a3c5e;
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+    p {
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 20px;
+    }
+    a {
+      text-decoration: none;
+      color: #007bff;
+      transition: color 0.2s, transform 0.2s;
+      font-size: 16px;
+    }
+    a:hover {
+      color: #0056b3;
+      transform: translateX(2px);
+    }
+    .team-table-container {
+      overflow-x: auto;
+      margin-top: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fdfdfd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    caption {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1a3c5e;
+      padding: 10px;
+      text-align: left;
+    }
+    th, td {
+      padding: 15px;
+      text-align: left;
+      font-size: 18px;
+      line-height: 1.8;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background: linear-gradient(to right, #00acc1, #0288d1);
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    tr:hover {
+      background-color: #f0f4f8;
+      transition: background-color 0.3s;
+    }
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    @media (max-width: 640px) {
+      .container {
+        margin: 20px;
+        padding: 15px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      p, th, td {
+        font-size: 16px;
+      }
+      th {
+        font-size: 14px;
+      }
+      table {
+        display: block;
+        overflow-x: auto;
+      }
+      thead {
+        display: none;
+      }
+      tr {
+        display: block;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+      }
+      td {
+        display: block;
+        text-align: left;
+        padding: 10px;
+        border: none;
+        position: relative;
+      }
+      td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #1a3c5e;
+        display: block;
+        margin-bottom: 5px;
+      }
+      .avatar {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>Chào mừng đến với hệ thống RAG</h1>
-    <nav>
-      <a href="/chat">Trò chuyện</a> |
-      <a href="/about">Giới thiệu</a>
-    </nav>
+    <h1>Hệ thống RAG</h1>
+    <p>
+      Chào mừng bạn đến với hệ thống RAG. Đây là nơi bạn có thể trò chuyện và tìm hiểu thêm về chúng tôi.
+    </p>
+    <div class="team-table-container">
+      <table role="table">
+        <caption>Giới thiệu thành viên đội ngũ</caption>
+        <thead role="rowgroup">
+          <tr role="row">
+            <th scope="col" role="columnheader">Họ tên</th>
+            <th scope="col" role="columnheader">Vai trò</th>
+            <th scope="col" role="columnheader">Mô tả công việc</th>
+          </tr>
+        </thead>
+        <tbody role="rowgroup">
+          <tr role="row">
+            <td data-label="Tên" role="cell">Bùi Việt Nam</td>
+            <td data-label="Vai trò" role="cell">Trưởng nhóm</td>
+            <td data-label="Mô tả công việc" role="cell">Sử dụng RAG, tạo giao diện hội thoại liên tục, có router điều hướng hội thoại.</td>
+          </tr>
+          <tr role="row">
+            <td data-label="Tên" role="cell">Đỗ Đông Giang</td>
+            <td data-label="Vai trò" role="cell">Thành viên</td>
+            <td data-label="Mô tả công việc" role="cell">Thu thập dữ liệu phong phú (> 500 dòng, nhiều nguồn) và tiền xử lý nâng cao.</td>
+          </tr>
+          <tr role="row">
+            <td data-label="Tên" role="cell">Phạm Thị Xuân Mai</td>
+            <td data-label="Vai trò" role="cell">Thành viên</td>
+            <td data-label="Mô tả công việc" role="cell">Tạo chunks, embedding dữ liệu thu thập</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top: 30px;">
+      <a href="/chat">Trò chuyện với hệ thống RAG</a> | <a href="/about">Giới thiệu</a>
+    </p>
   </div>
 </body>
 </html>

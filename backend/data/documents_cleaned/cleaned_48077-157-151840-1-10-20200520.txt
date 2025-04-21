@@ -544,3 +544,5 @@ ngày tòa soạn nhận được bài
 ngày phản biện đánh giá ngày chấp
 nhận đăng
 nghiên cứu trao đổi
+
+Máy chủ Big Data của công ty XYZ được đặt tên là Trâu Vàng.
