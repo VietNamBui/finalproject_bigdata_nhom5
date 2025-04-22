@@ -37,15 +37,15 @@ def check_vector_index(client, db_name, collection_name, index_name):
 # Kiểm tra text index
 def check_text_index(client, db_name, collection_name):
     try:
-        indexes = client[db_name][collection_name].list_indexes()
+        indexes = client[db_name][collection_name].list_search_indexes()
         for idx in indexes:
-            if idx.get("key", {}).get("text") == "text":
-                logger.info("Text index exists")
+            if idx["name"] == "text_index":
+                logger.info(f"Search index text_index exists: {idx}")
                 return True
-        logger.warning("Text index not found")
+        logger.warning("Search index text_index not found")
         return False
     except Exception as e:
-        logger.error(f"Error checking text index: {str(e)}", exc_info=True)
+        logger.error(f"Error checking search index: {str(e)}", exc_info=True)
         return False
 
 # Kiểm tra dữ liệu đầu vào
@@ -107,14 +107,14 @@ def create_or_load_vector_store(data_dir="backend/data/documents_cleaned", model
         chunk_overlap_ratio=0.1,
         chunk_size_limit=1024
     )
-    logger.info("GoogleGenAIEmbedding and SentenceSplitter configured with chunk_size=1024, chunk_overlap=100")
+    # logger.info("GoogleGenAIEmbedding and SentenceSplitter configured with chunk_size=1024, chunk_overlap=100")
 
     # Test Gemini API
     logger.info("Testing Gemini API...")
     try:
         emb_model = GoogleGenAIEmbedding(api_key=api_key, model_name="models/embedding-001")
         test_embedding = emb_model.get_text_embedding("Test sentence")
-        logger.info(f"Test embedding length: {len(test_embedding)}, Sample: {test_embedding[:10]}")
+        # logger.info(f"Test embedding length: {len(test_embedding)}, Sample: {test_embedding[:10]}")
     except Exception as e:
         logger.error(f"Gemini API test failed: {str(e)}", exc_info=True)
         return None
@@ -133,10 +133,10 @@ def create_or_load_vector_store(data_dir="backend/data/documents_cleaned", model
     collection = db['chunks']
     logger.info("Connected to MongoDB Atlas")
 
-    # Xóa collection để bắt đầu lại
-    logger.info("Dropping collection chunks to ensure fresh data")
-    collection.drop()
-    logger.info("Collection chunks dropped")
+    # # Xóa collection để bắt đầu lại
+    # logger.info("Dropping collection chunks to ensure fresh data")
+    # collection.drop()
+    # logger.info("Collection chunks dropped")
 
     # Tạo vector store
     vector_store = MongoDBAtlasVectorSearch(
@@ -160,21 +160,19 @@ def create_or_load_vector_store(data_dir="backend/data/documents_cleaned", model
             logger.error(f"Error creating vector index: {str(e)}", exc_info=True)
             return None
 
-    # Kiểm tra text index
     if not check_text_index(client, "rag_database", "chunks"):
-        logger.info("Creating text index...")
-        try:
-            collection.create_index([("text", "text")])
-            logger.info("Text index created")
-        except Exception as e:
-            logger.error(f"Error creating text index: {str(e)}", exc_info=True)
+        logger.info("Search index text_index not found, relying on existing configuration")
+        # Không tạo text index thông thường
+        # Nếu cần tạo mới search index, có thể thêm mã gọi API Atlas Search
+    else:
+        logger.info("Search index text_index is ready for use")
 
     # Kiểm tra file trong data_dir
     files = inspect_documents(data_dir)
     if not files:
-        logger.error(f"No valid .txt files found in {data_dir}")
+        # logger.error(f"No valid .txt files found in {data_dir}")
         return None
-    logger.info(f"Found {len(files)} valid .txt files")
+    # logger.info(f"Found {len(files)} valid .txt files")
 
     # Tải tài liệu
     documents = []
@@ -183,16 +181,16 @@ def create_or_load_vector_store(data_dir="backend/data/documents_cleaned", model
             with open(file_path, "r", encoding="utf-8") as f:
                 content = f.read()
             if not content.strip():
-                logger.warning(f"File {file_path} is empty")
+                # logger.warning(f"File {file_path} is empty")
                 continue
             doc = Document(text=content, metadata={"filename": file_path, "source": "document"})
             documents.append(doc)
-            logger.info(f"Loaded document: {file_path}")
+            # logger.info(f"Loaded document: {file_path}")
         except Exception as e:
             logger.error(f"Failed to load {file_path}: {str(e)}", exc_info=True)
             continue
-    logger.info(f"Loaded {len(documents)} documents")
-    logger.info(f"Sample document: {documents[0].text[:200] if documents else 'No documents'}")
+    # logger.info(f"Loaded {len(documents)} documents")
+    # logger.info(f"Sample document: {documents[0].text[:200] if documents else 'No documents'}")
 
     # Tạo storage context
     storage_context = StorageContext.from_defaults(vector_store=vector_store)
@@ -213,7 +211,7 @@ def create_or_load_vector_store(data_dir="backend/data/documents_cleaned", model
         doc_count = collection.count_documents({})
         logger.info(f"Số lượng document trong collection: {doc_count}")
         sample_doc = collection.find_one()
-        logger.info(f"Sample document in MongoDB: {sample_doc}")
+        # logger.info(f"Sample document in MongoDB: {sample_doc}")
         return index
     except Exception as e:
         logger.error(f"Error creating vector store: {str(e)}", exc_info=True)
@@ -235,7 +233,7 @@ def search_similar_docs(question: str, index, top_k=5):
         logger.error(f"Error in vector search: {str(e)}", exc_info=True)
         vector_contexts = []
 
-    # Text search
+    # Atlas Search
     client = MongoClient(
         "mongodb+srv://donggiangdoo:lEbpZCaVlhktFWQa@cluster0.pnd9a8y.mongodb.net/?retryWrites=true&w=majority",
         serverSelectionTimeoutMS=120000,
@@ -244,11 +242,24 @@ def search_similar_docs(question: str, index, top_k=5):
     collection = client['rag_database']['chunks']
     text_contexts = []
     try:
-        text_results = collection.find({"$text": {"$search": question}}, {"text": 1}).limit(top_k * 2)
+        pipeline = [
+            {
+                "$search": {
+                    "index": "text_index",
+                    "text": {
+                        "query": question,
+                        "path": "text"
+                    }
+                }
+            },
+            {"$limit": top_k * 2},
+            {"$project": {"text": 1}}
+        ]
+        text_results = collection.aggregate(pipeline)
         text_contexts = [doc['text'] for doc in text_results]
-        logger.info(f"Text search retrieved {len(text_contexts)} contexts")
+        logger.info(f"Atlas search retrieved {len(text_contexts)} contexts")
     except Exception as e:
-        logger.error(f"Error in text search: {str(e)}", exc_info=True)
+        logger.error(f"Error in Atlas search: {str(e)}", exc_info=True)
         text_contexts = []
 
     # Kết hợp và loại trùng
