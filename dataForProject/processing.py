@@ -49,7 +49,7 @@ print(f"Tổng số dòng ban đầu: {len(combined_text.split('\n'))}")
 
 # Save raw text
 for pdf_file, text in all_text:
-    with open(f"data/output_clean/raw_{pdf_file}.txt", "w", encoding="utf-8") as f:
+    with open(f"dataForProject/data/output_clean/raw_{pdf_file}.txt", "w", encoding="utf-8") as f:
         f.write(text)
 
 def clean_text(text, source):
@@ -118,12 +118,12 @@ cleaned_combined = "\n".join(cleaned_texts)
 lines = cleaned_combined.split('\n')
 print(f"Tổng số dòng sau làm sạch: {len(lines)}")
 
-with open("data/output_clean/cleaned_text.txt", "w", encoding="utf-8") as f:
+with open("dataForProject/data/output_clean/cleaned_text.txt", "w", encoding="utf-8") as f:
     f.write(cleaned_combined)
 
 # Save individual cleaned texts
 for pdf_file, cleaned in zip([f for f in os.listdir(data_dir) if f.endswith(".pdf")], cleaned_texts):
-    with open(f"data/output_clean/cleaned_{pdf_file}.txt", "w", encoding="utf-8") as f:
+    with open(f"dataForProject/data/output_clean/cleaned_{pdf_file}.txt", "w", encoding="utf-8") as f:
         f.write(cleaned)
 
 # Download NLTK punkt_tab
@@ -152,7 +152,7 @@ for pdf_file, cleaned in zip([f for f in os.listdir(data_dir) if f.endswith(".pd
 def log_removed_lines(text, cleaned_text, source):
     original_lines = text.split('\n')
     cleaned_lines = cleaned_text.split('\n')
-    with open("data/output_clean/log.txt", "a", encoding="utf-8") as log:
+    with open("dataForProject/data/output_clean/log.txt", "a", encoding="utf-8") as log:
         log.write(f"\nRemoved lines from {source}:\n")
         for line in original_lines:
             if line.strip() and line.strip().lower() not in [cl.strip().lower() for cl in cleaned_lines]:

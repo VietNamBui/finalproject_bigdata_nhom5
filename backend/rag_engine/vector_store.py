@@ -107,14 +107,14 @@ def create_or_load_vector_store(data_dir="backend/data/documents_cleaned", model
         chunk_overlap_ratio=0.1,
         chunk_size_limit=1024
     )
-    # logger.info("GoogleGenAIEmbedding and SentenceSplitter configured with chunk_size=1024, chunk_overlap=100")
+    logger.info("GoogleGenAIEmbedding and SentenceSplitter configured with chunk_size=512, chunk_overlap=50")
 
     # Test Gemini API
     logger.info("Testing Gemini API...")
     try:
         emb_model = GoogleGenAIEmbedding(api_key=api_key, model_name="models/embedding-001")
         test_embedding = emb_model.get_text_embedding("Test sentence")
-        # logger.info(f"Test embedding length: {len(test_embedding)}, Sample: {test_embedding[:10]}")
+        logger.info(f"Test embedding length: {len(test_embedding)}, Sample: {test_embedding[:10]}")
     except Exception as e:
         logger.error(f"Gemini API test failed: {str(e)}", exc_info=True)
         return None
